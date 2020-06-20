@@ -1,9 +1,0 @@
-@RELATION Feature_Runstatus_QBF_2011
-
-@ATTRIBUTE instance_id STRING
-@ATTRIBUTE repetition NUMERIC
-@ATTRIBUTE all_feats {ok, timeout, memout, presolved, crash, other}
-
-@DATA
-adder-10-sat-shuffled,1,ok
-adder-10-unsat-shuffled,1,ok

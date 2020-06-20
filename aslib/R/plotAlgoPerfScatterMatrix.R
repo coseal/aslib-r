@@ -7,5 +7,6 @@ plotAlgoPerfScatterMatrix = function(asscenario, measure, impute.zero.vals = FAL
     asscenario = removeCensoredRuns(asscenario)
   z = getEDAAlgoPerf(asscenario, measure, impute.failed.runs = TRUE, jitter = TRUE,
     impute.zero.vals = impute.zero.vals, check.log = log, format = "wide", with.instance.id = FALSE)
-  pairs(z$data, log = ifelse(log, "xy", ""))
+  perf.range = range(as.numeric(unlist(z$data)))
+  pairs(z$data, log = ifelse(log, "xy", ""), xlim = perf.range, ylim = perf.range)
 }

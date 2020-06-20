@@ -41,7 +41,30 @@ solver always has a misclassification penalty of zero.</li>
 #   if (is.null(fsteps))
 #     fsteps = getFeatureStepNames(asscenario)
   feats = getProvidedFeatures(asscenario, fsteps)
-  printResultsAsHTMLTable(llama.results, scenario.id = asscenario$desc$scenario_id)
+
+  d = llama.results
+  d$llama.fun = sapply(d$algo, function(a) {
+    if(a == "baseline") return("foo")
+    if(!is.na(pmatch("classif_", a))) return("classify")
+    if(!is.na(pmatch("regr_", a))) return("regression")
+    if(!is.na(pmatch("cluster_", a))) return("cluster")
+    warning(paste("cannot match", a))
+  })
+
+  d$model = mapply(function(algo, type) {
+    if(algo == "baseline") return(type)
+    return(strsplit(algo, "_")[[1]][2])
+  }, d$algo, d$type)
+
+  d$algo = sapply(d$algo, function(a) {
+    return(strsplit(a, "_")[[1]][1])
+  })
+
+  res = subset(d, select = c("id", "prob", "algo", "llama.fun", "model", "repl", "succ", "par10", "mcp"))
+  res$id = 1:nrow(res)
+  res = sortByCol(res, c("prob", "algo", "llama.fun"))
+
+  printResultsAsHTMLTable(res, scenario.id = asscenario$desc$scenario_id)
 end.rcode-->
 
 <p>
@@ -60,12 +83,38 @@ The feature steps correspond to the following <!--rinline length(feats)--> / <!-
 <p>
 <!--begin.rcode, results = "asis"
   for (i in seq_along(feats)) {
-    cat(feats[i]); cat(", ")
+    cat(feats[i]); if (i != length(feats)) cat(", ")
     if (i %% 5 == 0L )
       cat("<br>")
   }
 end.rcode-->
 <p>
+
+<h3> Algorithm and Feature Subset Selection </h3>
+
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <!--rinline selection.results$n.all.algos --> to <!-- rinline selection.results$n.selected.algos -->, resulting in a PAR10 score of <!--rinline sprintf("%.3f", selection.results$algo.perf) --> for the reduced model. Analogously, the model that was generated based on <!-- rinline selection.results$n.selected.feats --> of the originally <!--rinline selection.results$n.all.feats --> features resulted in a PAR10 score of <!--rinline sprintf("%.3f", selection.results$feat.perf) -->.
+Below, you can find the list of the selected features and solvers:
+
+<p>
+<!--begin.rcode, results = "asis"
+  sel.feats = selection.results$selected.feats
+  sel.algos = selection.results$selected.algos
+  cat("Selected Features:"); cat("<br>")
+  for (i in seq_along(sel.feats)) {
+    cat(sel.feats[i]); if (i != length(sel.feats)) cat(", ")
+    if (i %% 5 == 0L )
+      cat("<br>")
+  }
+  cat("<br>")
+  cat("<br>Selected Solvers:"); cat("<br>")
+  for (i in seq_along(sel.algos)) {
+    cat(sel.algos[i]); if (i != length(sel.algos)) cat(", ")
+    if (i %% 5 == 0L )
+      cat("<br>")
+  }
+end.rcode-->
+<p>
+
 
 </body>
 </html>

@@ -9,6 +9,10 @@
 #' @param name [\code{character(1)}]\cr
 #'   Name of benchmark data set.
 #' @return [\code{\link{ASScenario}}]. Description object.
+#' @examples
+#' \dontrun{
+#'   sc = getCosealASScenario("CSP-2010")
+#' }
 #' @export
 getCosealASScenario = function(name) {
     res = system2("svn", c("help", "2>&1"), stdout = "/dev/null")

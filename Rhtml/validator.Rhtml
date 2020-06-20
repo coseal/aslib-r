@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Outout of data validator</title>
+<title>Output of data validator</title>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
 <!--begin.rcode
   fn.main = file.path(aslib.validator.dir, "data_check_tool_python/src/main.py")
   args = c(fn.main, sprintf("--dir %s", scenario.dir))
-  s = system3("python", args, stdout = TRUE, stderr = TRUE)
+  s = system3("python2", args, stdout = TRUE, stderr = TRUE)
   s = shortenPathsInValidator(s, scenario.dir)
   cat(collapse(s$output, "\n"))
   cat("\n")  

@@ -11,7 +11,7 @@ source("searchSequential.R")
 source("searchSequentialObjective.R")
 
 ds.dirs = list.files(coseal.data.dir, full.names = TRUE)
-ds.dirs = ds.dirs[!str_detect(ds.dirs, "BBOB|MACHINE|README.md")]
+ds.dirs = ds.dirs[!str_detect(ds.dirs, "README.md")]
 # ds.dirs = ds.dirs[4]
 print(ds.dirs)
 #ds.dirs = ds.dirs[7]

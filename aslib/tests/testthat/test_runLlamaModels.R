@@ -4,13 +4,14 @@ aggrShort = function(job, res) {
 }
 
 test_that("runLlamaModels", {
+  skip_on_cran()
   fs = setNames(list(getFeatureStepNames(testscenario1)), testscenario1$desc$scenario_id)
   reg = runLlamaModels(list(testscenario1), feature.steps.list = fs,
     baselines = "vbs",
-    learners = list(makeLearner("classif.J48"),
+    learners = list(makeLearner("classif.rpart"),
                  makeLearner("regr.rpart"),
                  makeLearner("cluster.SimpleKMeans")),
-    par.sets = list(makeParamSet(), makeParamSet(), makeParamSet())
+    par.sets = list(ParamHelpers::makeParamSet(), ParamHelpers::makeParamSet(), ParamHelpers::makeParamSet())
   )
   submitJobs(reg)
   waitForJobs(reg)
@@ -26,11 +27,12 @@ test_that("runLlamaModels", {
 })
 
 test_that("runLlamaModels w/ costs", {
+  skip_on_cran()
   fs = setNames(list(getFeatureStepNames(testscenario2)), testscenario2$desc$scenario_id)
   reg = runLlamaModels(list(testscenario2), feature.steps.list = fs,
     baselines = "vbs",
     learners = list(makeLearner("classif.OneR")),
-    par.sets = list(makeParamSet())
+    par.sets = list(ParamHelpers::makeParamSet())
   )
   submitJobs(reg)
   waitForJobs(reg)

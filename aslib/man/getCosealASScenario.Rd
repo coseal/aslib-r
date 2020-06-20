@@ -18,4 +18,9 @@ Uses subversion export to retrieve a specific scenario from the official
 Coseal Github repository. The scenario is checked out into a temporary directory
 and parsed with \code{parseASScenario}.
 }
+\examples{
+\dontrun{
+  sc = getCosealASScenario("CSP-2010")
+}
+}
 

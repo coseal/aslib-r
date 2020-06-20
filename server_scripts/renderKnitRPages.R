@@ -2,8 +2,7 @@ library(knitr)
 library(ggplot2)
 library(xtable)
 library(devtools)
-load_all("../aslib")
-#library(aslib)
+library(aslib)
 library(BBmisc)
 library(stringr)
 source("defs.R")
@@ -15,6 +14,7 @@ data.dir =  normalizePath(coseal.data.dir)
 scenario.dirs = list.dirs(data.dir, recursive = FALSE)
 # avoid bbob and machine learning for now
 scenario.dirs = scenario.dirs[!str_detect(scenario.dirs, ".git")]
+scenario.dirs = scenario.dirs[!str_detect(scenario.dirs, "TSP-")]
 # scenario.dirs = scenario.dirs[1]
 rhtml.dir = normalizePath("../Rhtml")
 html.dir = normalizePath("../html")
@@ -33,7 +33,21 @@ ee$data.dir = data.dir
 ee$scenario.dirs = scenario.dirs
 ee$url.prefix = url.prefix
 res = load2("llama_results.RData")
-ee$llama.results = res$res
+res = res$res
+sel = load2("selection_results.RData")
+ids = unname(unlist(lapply(sel, function(d) d$id)))
+selected = lapply(sel, function(d)
+  list(
+    selected.feats = d$all.feats[d$feats$x$x == 1],
+    selected.algos = d$all.solvers[d$solvs$x$x == 1],
+    feat.perf = unname(d$feats$y),
+    algo.perf = unname(d$solvs$y),
+    n.all.feats = length(d$all.feats),
+    n.selected.feats = sum(d$feats$x$x),
+    n.all.algos = length(d$all.solvers),
+    n.selected.algos = sum(d$solvs$x$x)
+  ))
+names(selected) = ids
 ee$asscenarios = list()
 
 
@@ -49,6 +63,8 @@ try({
     ee$asscenarios[[asscenario$desc$scenario_id]] = asscenario
     ee$scenario.dir = scenario.dir
     ee$asscenario = asscenario
+    ee$selection.results = selected[[scenario.name]]
+    ee$llama.results = subset(res, prob == scenario.name)
 
     # create output dir
     out.dir = file.path(html.dir, scenario.name)

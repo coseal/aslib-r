@@ -146,7 +146,7 @@ runLlamaModels = function(asscenarios, feature.steps.list = NULL, baselines = NU
           list(features = x)
         }
       }
-      p = if (isEmpty(par.set))
+      p = if (ParamHelpers::isEmpty(par.set))
         llama.fun(lrn, data = static$llama.cv, pre = pre)
       else
         doNestedCVWithTuning(static$asscenario, static$llama.cv, pre, static$timeout,
@@ -189,8 +189,8 @@ doNestedCVWithTuning = function(asscenario, ldf, pre, timeout, learner, par.set,
 }
 
 tuneLlamaModel = function(asscenario, cv.splits, pre, timeout, learner, par.set, llama.fun, rs.iters) {
-  des = generateRandomDesign(rs.iters, par.set, trafo = TRUE)
-  des.list = dfRowsToList(des, par.set)
+  des = ParamHelpers::generateRandomDesign(rs.iters, par.set, trafo = TRUE)
+  des.list = ParamHelpers::dfRowsToList(des, par.set)
   requirePackages(c("parallelMap"), why = "tuneLlamaModel")
   parallelStartMulticore()
   ys = parallelMap(function(x) {
@@ -199,7 +199,7 @@ tuneLlamaModel = function(asscenario, cv.splits, pre, timeout, learner, par.set,
       p = llama.fun(learner, data = cv.splits, pre = pre)
       ldf = fixFeckingPresolve(asscenario, cv.splits)
       par10 = mean(parscores(ldf, p, timeout = timeout))
-      messagef("[Tune]: %s : par10 = %g", paramValueToString(par.set, x), par10)
+      messagef("[Tune]: %s : par10 = %g", ParamHelpers::paramValueToString(par.set, x), par10)
       return(par10)
     })
     if(inherits(par10, "try-error")) {
@@ -211,7 +211,7 @@ tuneLlamaModel = function(asscenario, cv.splits, pre, timeout, learner, par.set,
   # messagef"[Tune]: Tuning evals failed: %i", sum(is.na(ys))]
   best.i = getMinIndex(ys)
   best.parvals = des.list[[best.i]]
-  messagef("[Best]: %s : par10 = %g", paramValueToString(par.set, best.parvals), ys[best.i])
+  messagef("[Best]: %s : par10 = %g", ParamHelpers::paramValueToString(par.set, best.parvals), ys[best.i])
   return(best.parvals)
 }
 

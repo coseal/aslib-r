@@ -1,4 +1,3 @@
 library(testthat)
-library(aslib)
-
+library(llama)
 test_check("aslib")

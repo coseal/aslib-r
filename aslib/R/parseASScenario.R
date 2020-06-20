@@ -53,6 +53,10 @@
 #' @param path [\code{character(1)}]\cr
 #'   Path to directory of benchmark data set.
 #' @return [\code{\link{ASScenario}}]. Description object.
+#' @examples
+#' \dontrun{
+#'   sc = parseASScenario("/path/to/scenario")
+#' }
 #' @export
 #' @seealso \code{\link{writeASScenario}}
 #' @aliases ASScenario
@@ -102,12 +106,13 @@ parseASScenario = function(path) {
   algo.runs = readARFF(file.path(path, "algorithm_runs.arff"))
   colnames(algo.runs) = make.names(colnames(algo.runs))
   algo.runs$algorithm = make.names(algo.runs$algorithm)
+  algo.runs = sortByCol(algo.runs, c("instance_id", "repetition"))
 
   ### build algo.runstatus
   algo.runstatus = dcast(algo.runs, instance_id + repetition ~ algorithm, value.var = "runstatus")
   # sort rows and cols
   algo.runstatus = algo.runstatus[, c("instance_id", "repetition",
-    desc$algorithms_deterministic, desc$algorithms_stochastic)]
+    names(desc$metainfo_algorithms))]
   algo.runstatus = sortByCol(algo.runstatus, c("instance_id", "repetition"))
 
   ### build cv.splits
@@ -164,8 +169,7 @@ print.ASScenario = function(x, ...) {
   printField1("Features (stochastic)", d$features_stochastic)
   printField1("Feature repetitions", collapse(range(x$feature.values$repetition), sep = " - "))
   printField1("Feature costs", ifelse(is.null(x$feature.costs), "No", "Yes"))
-  printField1("Algo. (deterministic)", d$algorithms_deterministic)
-  printField1("Algo. (stochastic)", d$algorithms_stochastic)
+  printField1("Algo.", names(d$metainfo_algorithms))
   printField1("Algo. repetitions", collapse(range(x$algo.runs$repetition), sep = " - "))
   printField1("Algo. runs (inst x algo x rep)", nrow(x$algo.runs))
   printField1("Feature steps", names(d$feature_steps))

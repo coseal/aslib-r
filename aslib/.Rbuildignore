@@ -3,10 +3,6 @@ makeR
 ^.*\.swp$
 .Rproj.user
 .travis.yml
-Makefile
 README.md
 run_llama_models-files
-^demo.R
-^mytest.*.R
-^test.*.R
 ^todo-files

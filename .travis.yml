@@ -1,35 +1,37 @@
-# travis config, based on https://github.com/craigcitro/r-travis
+language: r
+sudo: false
+cache: packages
+r:
+  - release
+  - devel
 
-language: c
-script: travis_wait ./travis-tool.sh run_tests
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
 env:
-   global:
-     - _R_CHECK_TIMINGS_=0
+  global:
+    - _R_CHECK_TIMINGS_=0
+    - _R_CHECK_FORCE_SUGGESTS_=0
+
+warnings_are_errors: true
+r_check_args: "--as-cran --run-donttest"
+
+r_packages:
+  - roxygen2
+
 before_install:
   - cd aslib
-  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-  - chmod 755 ./travis-tool.sh
-  - ./travis-tool.sh bootstrap
-install:
-  - ./travis-tool.sh aptget_install r-cran-rjava
-  - sudo R CMD javareconf
-  - ./travis-tool.sh github_package hadley/testthat
-  - ./travis-tool.sh github_package hadley/assertthat
-  - ./travis-tool.sh install_deps
-  - java -cp /usr/local/lib/R/site-library/RWekajars/java/weka.jar weka.core.WekaPackageManager -install-package XMeans
-branches:
-  only:
-   - master
-notifications:
-  email:
-    on_success: change
-    on_failure: change
+
+before_script:
+  - R --no-save <<< 'library("devtools"); document()'
+
 after_failure:
   - ./travis-tool.sh dump_logs
 
 notifications:
   email:
     recipients:
-        - lars.kotthoff@insight-centre.org
-    on_success: change
-    on_failure: always
+      - larsko@cs.ubc.ca
+on_success: change
+on_failure: always

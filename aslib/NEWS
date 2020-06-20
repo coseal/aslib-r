@@ -1,3 +1,5 @@
-aslib_1.0:
+aslib_0.1.1:
+- Update for R 4.0 compatibility.
+aslib_0.1:
 - First submit to CRAN.
 

@@ -1,8 +1,0 @@
-@relation R_data_frame
-
-@attribute instance_id string
-@attribute repetition numeric
-@attribute fold numeric
-
-@data
-adder-10-sat-shuffled,1,1

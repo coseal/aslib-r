@@ -5,11 +5,11 @@ library(stringr)
 library(mlr)
 library(ParamHelpers)
 library(BatchExperiments)
-load_all("../aslib")
+library(aslib)
 source("defs.R")
 
 ds.dirs = list.files(coseal.data.dir, full.names = TRUE)
-ds.dirs = ds.dirs[!str_detect(ds.dirs, "BBOB|MACHINE|README.md")]
+ds.dirs = ds.dirs[!str_detect(ds.dirs, "TSP-|README.md")]
 print(ds.dirs)
 #ds.dirs = list(ds.dirs[2])
 asscenarios = lapply(ds.dirs, parseASScenario)

@@ -61,6 +61,11 @@ p the number of features, s the number of feature steps and k the number of algo
   should not happen.}
 }
 }
+\examples{
+\dontrun{
+  sc = parseASScenario("/path/to/scenario")
+}
+}
 \seealso{
 \code{\link{writeASScenario}}
 }

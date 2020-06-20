@@ -5,6 +5,6 @@
 #' @return [\code{character}].
 #' @export
 getAlgorithmNames = function(asscenario) {
-  c(asscenario$desc$algorithms_deterministic, asscenario$desc$algorithms_stochastic)
+  names(asscenario$desc$metainfo_algorithms)
 }
 

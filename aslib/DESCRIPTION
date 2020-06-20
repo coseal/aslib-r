@@ -1,12 +1,13 @@
 Package: aslib
-Title: Interface to the algorithm selection benchmark library
+Title: Interface to the Algorithm Selection Benchmark Library
 Description: Provides an interface to the algorithm selection benchmark library
-    at http://aslib.net and the LLAMA package for building algorithm selection
-    models.
-Author: Bernd Bischl <bernd_bischl@gmx.net>, Lars Kotthoff <larsko@cs.ubc.ca>,
+    at <http://www.aslib.net> and the 'LLAMA' package
+    (<https://cran.r-project.org/package=llama>) for building
+    algorithm selection models; see Bischl et al. (2016)
+    <doi:10.1016/j.artint.2016.04.003>.
+Author: Bernd Bischl <bernd_bischl@gmx.net>, Lars Kotthoff <larsko@uwyo.edu>,
     Pascal Kerschke <kerschke@uni-muenster.de> [ctb]
-Maintainer: Bernd Bischl <bernd_bischl@gmx.net>, Lars Kotthoff
-    <larsko@cs.ubc.ca>
+Maintainer: Lars Kotthoff <larsko@uwyo.edu>
 URL: https://github.com/coseal/aslib-r/
 BugReports: https://github.com/coseal/aslib-r/issues
 License: GPL-3
@@ -28,8 +29,9 @@ Imports:
     stringr,
     yaml
 Suggests:
-    testthat
+    testthat,
+    rpart
 LazyData: yes
 ByteCompile: yes
-Version: 0.1
+Version: 0.1.1
 RoxygenNote: 5.0.1

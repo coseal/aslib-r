@@ -1,12 +1,11 @@
-INST_DIR = file.path("..", "..", "inst")
-testscenario1 = parseASScenario(file.path(INST_DIR, "qbf_2011"))
-testscenario2 = parseASScenario(file.path(INST_DIR, "sat12-indu"))
+testscenario1 = parseASScenario(file.path("qbf_2011"))
+testscenario2 = parseASScenario(file.path("sat12-indu"))
 
 makeTestScenario3 = function() {
 
   iids = c("i1", "i2", "i3")
 
-  desc = makeS3Obj("ASScenarioDesc",
+  desc = BBmisc::makeS3Obj("ASScenarioDesc",
     scenario_id = "foo",
     performance_measures = "m",
     performance_type = c(m = "runtime"),
@@ -14,8 +13,9 @@ makeTestScenario3 = function() {
     algorithm_cutoff_time = 100,
     features_deterministic = c("f1", "f2", "f3"),
     features_stochastic = character(0),
-    algorithms_deterministic = c("a1", "a2"),
-    algorithms_stochastic = character(0),
+    metainfo_algorithms = list(
+      a1 = list(configuration = "", deterministic = TRUE),
+      a2 = list(configuration = "", deterministic = TRUE)),
     feature_steps = list(
       s1 = list(provides = c("f1", "f2")),
       s2 = list(provides = c("f2", "f3"))
@@ -41,7 +41,7 @@ makeTestScenario3 = function() {
       a1 = c("ok", "ok", "ok"), a2 = c("ok", "ok", "crash"))
   algo.perf = data.frame(instance_id = iids, repetition = 1L,
       a1 = c(30, 90, 70), a2 = c(50, 30, 10))
-  makeS3Obj("ASScenario",
+  BBmisc::makeS3Obj("ASScenario",
     desc = desc,
     feature.values = feats,
     feature.runstatus = data.frame(instance_id = iids, repetition = 1L, s1 = rs1, s2 = rs2),
