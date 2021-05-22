@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 14:00:18 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:27:27 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.808 </td> <td> 1758.139 </td> <td>  0.000 </td> </tr>
@@ -105,11 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.626</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">3401.815</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">170.949</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.626</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">3401.815</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">170.949</FONT></b> </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td>  0.696 </td> <td> 2762.263 </td> <td> 99.818 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.724</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">2508.008</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">71.640</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td>  0.699 </td> <td> 2738.522 </td> <td> 95.455 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.717</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">2572.056</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">77.554</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td>  0.702 </td> <td> 2710.964 </td> <td> 93.734 </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.638</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">3290.490</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">156.514</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> lm </td> <td>  0.690 </td> <td> 2824.379 </td> <td> 110.260 </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td> <b><FONT COLOR="#FFAAAA"> 0.721</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">2548.488</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">86.283</FONT></b> </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.766</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">2131.166</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">37.142</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.776</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">2046.680</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">30.168</FONT></b> </td> </tr>
    </table>
 
 
@@ -125,18 +126,20 @@ Number of presolved instances: <code class="knitr inline">0</code>
 The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
 or on average: <code class="knitr inline">NA</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">46</code> / <code class="knitr inline">46</code> features:
+The feature steps correspond to the following <code class="knitr inline">46</code> / <code class="knitr inline">46</code> instance features:
 <p>
 EXIST_VARS, FORALL_VARS, TOTAL_VARS, CLAUSES, LITERALS, <br>EXIST_SET, FORALL_SET, TOTAL_SET, UNARY_CLAUSES, BINARY_CLAUSES, <br>TERNARY_MORE_CLAUSES, POS_HORN, NEG_HORN, EXIST_LIT_PER_CLAUSE, FORALL_LIT_PER_CLAUSE, <br>EXIST_VARS_PER_SET, FORALL_POS_LITS_PER_CLAUSE, FORALL_NEG_LITS_PER_CLAUSE, OCCS_POS_NO_PER_VAR, OCCS_FORALL_NO_PER_VAR, <br>OCCS_FORALL_POS_NO_PER_VAR, W_OCCS_POS_NO_PER_VAR, W_OCCS_FORALL_NO_PER_VAR, W_OCCS_FORALL_POS_NO_PER_VAR, W_PRODUCTS, <br>LITN_LIT, LITEP_LIT, LITEN_LITE, LITEN_LITN, LITFN_LIT, <br>LITFP_LITFN, OCCP_OCCN, OCCE_OCC, OCCEN_OCC, OCCFP_OCCF, <br>OCCEN_OCCE, OCCEN_OCCN, OCCFP_OCCFN, TERMORE_CLAUSE, NEG_HORN_CLAUSE, <br>WOCCN_WOCC, WOCCEP_WOCC, WOCCFN_WOCC, WOCCEP_WOCCE, WOCCEP_WOCCP, <br>WOCCFN_WOCCN
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">14</code> to <code class="knitr inline">8</code>, resulting in a PAR10 score of <code class="knitr inline">2040.329</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">4</code> of the originally <code class="knitr inline">46</code> features resulted in a PAR10 score of <code class="knitr inline">2032.505</code>.
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">14</code> to <code class="knitr inline">10</code>, resulting in a PAR10 score of <code class="knitr inline">2051.841</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">6</code> of the originally <code class="knitr inline">46</code> features resulted in a PAR10 score of <code class="knitr inline">2003.861</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br>FORALL_VARS, LITEP_LIT, LITEN_LITN, OCCEN_OCCE<br><br>Selected Solvers:<br>dual_ooq13, bcghostq, pre_dual_ooq13, rareqs, ghostq, <br>hiqqer1, ooq13, brareqs
+Selected Features:<br>TOTAL_SET, UNARY_CLAUSES, W_OCCS_FORALL_POS_NO_PER_VAR, OCCEN_OCCE, TERMORE_CLAUSE, <br>WOCCEP_WOCCP<br><br>Selected Solvers:<br>bcghostq, brareqs, depqbf, dual_ooq13, ghostq, <br>hiqqer3, ooq13, pre_dual_ooq13, rareqs, sqube<br>
 <p>
 
 

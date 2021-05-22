@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,20 +96,21 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 14:06:37 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:30:45 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.943 </td> <td> 2287.571 </td> <td>  0.000 </td> </tr>
   <tr> <td> baseline </td> <td> singleBest </td> <td> <b><FONT COLOR="#00FF00"> 0.870</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">5189.358</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">525.787</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.870</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">5189.358</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">525.787</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.870</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">5189.358</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">525.787</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#FFAAAA"> 0.880</FONT></b> </td> <td> 4706.229 </td> <td> 366.658 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.887</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4446.096</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">322.526</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.887</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4458.302</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">334.731</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> rpart </td> <td>  0.880 </td> <td> 4706.229 </td> <td> 366.658 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.887</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4455.380</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">331.809</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.883</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4567.651</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">336.080</FONT></b> </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.860</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">5483.982</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">496.412</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> lm </td> <td>  0.873 </td> <td> 4930.556 </td> <td> 374.985 </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td>  0.870 </td> <td> 5119.231 </td> <td> 455.661 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.900</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">3979.719</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">288.148</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.910</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">3649.287</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">281.717</FONT></b> </td> </tr>
    </table>
 
 
@@ -125,18 +126,20 @@ Number of presolved instances: <code class="knitr inline">0</code>
 The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
 or on average: <code class="knitr inline">NA</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">54</code> / <code class="knitr inline">54</code> features:
+The feature steps correspond to the following <code class="knitr inline">54</code> / <code class="knitr inline">54</code> instance features:
 <p>
 nvarsOrig, nclausesOrig, nvars, nclauses, reducedVars, <br>reducedClauses, Pre.featuretime, vars.clauses.ratio, POSNEG.RATIO.CLAUSE.mean, POSNEG.RATIO.CLAUSE.coeff.variation, <br>POSNEG.RATIO.CLAUSE.min, POSNEG.RATIO.CLAUSE.max, POSNEG.RATIO.CLAUSE.entropy, VCG.CLAUSE.mean, VCG.CLAUSE.coeff.variation, <br>VCG.CLAUSE.min, VCG.CLAUSE.max, VCG.CLAUSE.entropy, UNARY, BINARY., <br>TRINARY., Basic.featuretime, VCG.VAR.mean, VCG.VAR.coeff.variation, VCG.VAR.min, <br>VCG.VAR.max, VCG.VAR.entropy, POSNEG.RATIO.VAR.mean, POSNEG.RATIO.VAR.stdev, POSNEG.RATIO.VAR.min, <br>POSNEG.RATIO.VAR.max, POSNEG.RATIO.VAR.entropy, HORNY.VAR.mean, HORNY.VAR.coeff.variation, HORNY.VAR.min, <br>HORNY.VAR.max, HORNY.VAR.entropy, horn.clauses.fraction, VG.mean, VG.coeff.variation, <br>VG.min, VG.max, KLB.featuretime, CG.mean, CG.coeff.variation, <br>CG.min, CG.max, CG.entropy, cluster.coeff.mean, cluster.coeff.coeff.variation, <br>cluster.coeff.min, cluster.coeff.max, cluster.coeff.entropy, CG.featuretime
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">28</code> to <code class="knitr inline">6</code>, resulting in a PAR10 score of <code class="knitr inline">3604.574</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">51</code> features resulted in a PAR10 score of <code class="knitr inline">3620.060</code>.
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">28</code> to <code class="knitr inline">10</code>, resulting in a PAR10 score of <code class="knitr inline">3398.882</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">51</code> features resulted in a PAR10 score of <code class="knitr inline">3642.952</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br>nvars, Pre.featuretime, VCG.VAR.min<br><br>Selected Solvers:<br>abcdSAT, minisat_BCD, or.tools, multi.sat.g2_2, Lingeling_sr15baq, <br>Glucose_nbSatRsltn
+Selected Features:<br>TRINARY., POSNEG.RATIO.VAR.entropy, HORNY.VAR.entropy<br><br>Selected Solvers:<br>ADS.cryptominisat.autotune, Glucose_nbSat, GlueMiniSat_2.2.10, GlueMiniSat_2.2.10.5, Lingeling_sr15bal, <br>Lingeling_sr15baq, abcdSAT, minisat_BCD, or.tools, riss_505_1<br>
 <p>
 
 

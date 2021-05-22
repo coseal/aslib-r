@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -98,20 +98,21 @@ solver always has a misclassification penalty of zero.</li>
 
 <div class="warning"><pre class="knitr r">## Warning in minmax(perf2): no non-missing arguments to max; returning -Inf
 </pre></div>
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:56:42 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:27 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  1.000 </td> <td>  0.876 </td> <td>  0.000 </td> </tr>
   <tr> <td> baseline </td> <td> singleBest </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.856 </td> <td> <b><FONT COLOR="#FF0000"> 0.020</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FF0000"> 0.423</FONT></b> </td> <td>  0.452 </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA"> 0.647</FONT></b> </td> <td>  0.228 </td> </tr>
-  <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.837 </td> <td>  0.038 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.853 </td> <td> <b><FONT COLOR="#FFAAAA"> 0.022</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#00FF00"> 0.831</FONT></b> </td> <td>  0.045 </td> </tr>
+  <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#00FF00"> 0.837</FONT></b> </td> <td>  0.038 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.850 </td> <td> <b><FONT COLOR="#FFAAAA"> 0.025</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.841 </td> <td>  0.034 </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#00FF00"> 0.849</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA"> 0.026</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA"> 0.678</FONT></b> </td> <td>  0.198 </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.840 </td> <td>  0.035 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.848 </td> <td> <b><FONT COLOR="#FFAAAA"> 0.028</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.845 </td> <td> <b><FONT COLOR="#00FF00"> 0.030</FONT></b> </td> </tr>
    </table>
 
 
@@ -127,18 +128,20 @@ Number of presolved instances: <code class="knitr inline">0</code>
 The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
 or on average: <code class="knitr inline">NA</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">103</code> / <code class="knitr inline">103</code> features:
+The feature steps correspond to the following <code class="knitr inline">103</code> / <code class="knitr inline">103</code> instance features:
 <p>
 MeanAttributeEntropy, NaiveBayesAdwin.warnings, NoiseToSignalRatio, NumberOfNumericFeatures, NumberOfBinaryFeatures, <br>DecisionStumpKappa, Quartile3SkewnessOfNumericAtts, NumberOfMissingValues, J48.001.ErrRate, HoeffdingAdwin.changes, <br>PercentageOfNumericFeatures, MeanSkewnessOfNumericAtts, MinStdDevOfNumericAtts, NaiveBayesErrRate, MinMutualInformation, <br>MajorityClassPercentage, NumberOfSymbolicFeatures, J48.00001.ErrRate, MaxNominalAttDistinctValues, PercentageOfMissingValues, <br>MinKurtosisOfNumericAtts, MaxKurtosisOfNumericAtts, EquivalentNumberOfAtts, DecisionStumpErrRate, RandomTreeDepth3ErrRate, <br>MaxStdDevOfNumericAtts, NaiveBayesAdwin.changes, Quartile3AttributeEntropy, MeanKurtosisOfNumericAtts, MinorityClassPerentage, <br>J48.00001.Kappa, REPTreeDepth2ErrRate, Quartile2KurtosisOfNumericAtts, REPTreeDepth3AUC, RandomTreeDepth2ErrRate, <br>Quartile1AttributeEntropy, MeanMeansOfNumericAtts, MeanStdDevOfNumericAtts, REPTreeDepth1Kappa, Dimensionality, <br>REPTreeDepth2AUC, MinAttributeEntropy, NaiveBayesDdm.changes, MinNominalAttDistinctValues, MinorityClassSize, <br>Quartile2AttributeEntropy, Quartile1SkewnessOfNumericAtts, Quartile3StdDevOfNumericAtts, Quartile1MutualInformation, Quartile2SkewnessOfNumericAtts, <br>MajorityClassSize, REPTreeDepth3ErrRate, MaxAttributeEntropy, RandomTreeDepth2Kappa, HoeffdingDDM.changes, <br>Quartile3KurtosisOfNumericAtts, NaiveBayesKappa, HoeffdingDDM.warnings, Quartile2StdDevOfNumericAtts, MeanNominalAttDistinctValues, <br>REPTreeDepth1ErrRate, MaxMeansOfNumericAtts, NumberOfInstances, RandomTreeDepth1Kappa, J48.001.AUC, <br>MaxSkewnessOfNumericAtts, J48.0001.AUC, RandomTreeDepth3AUC, MeanMutualInformation, RandomTreeDepth1ErrRate, <br>RandomTreeDepth2AUC, MinMeansOfNumericAtts, PercentageOfBinaryFeatures, NumberOfFeatures, NaiveBayesAUC, <br>DefaultAccuracy, NaiveBayesDdm.warnings, Quartile3MeansOfNumericAtts, REPTreeDepth1AUC, MaxMutualInformation, <br>HoeffdingAdwin.warnings, RandomTreeDepth1AUC, J48.0001.Kappa, Quartile1MeansOfNumericAtts, RandomTreeDepth3Kappa, <br>Quartile1StdDevOfNumericAtts, REPTreeDepth2Kappa, Quartile2MeansOfNumericAtts, J48.00001.AUC, Quartile2MutualInformation, <br>J48.001.Kappa, PercentageOfInstancesWithMissingValues, NumberOfClasses, StdvNominalAttDistinctValues, ClassEntropy, <br>Quartile1KurtosisOfNumericAtts, Quartile3MutualInformation, MinSkewnessOfNumericAtts, PercentageOfSymbolicFeatures, J48.0001.ErrRate, <br>NumberOfInstancesWithMissingValues, REPTreeDepth3Kappa, DecisionStumpAUC
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from   to , resulting in a PAR10 score of  for the reduced model. Analogously, the model that was generated based on  of the originally  features resulted in a PAR10 score of .
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">30</code> to <code class="knitr inline">1</code>, resulting in a PAR10 score of <code class="knitr inline">0.423</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">1</code> of the originally <code class="knitr inline">101</code> features resulted in a PAR10 score of <code class="knitr inline">0.830</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br><br><br>Selected Solvers:<br>
+Selected Features:<br>MinorityClassSize<br><br>Selected Solvers:<br>X2893_weka.OLM
 <p>
 
 

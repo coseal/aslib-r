@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+  <title>Feature performance overview</title>
+</head>
+<body>
+
+
+<h2> Overview of Feature Values</h2>
+
+The following measures were taken for the results of each feature:
+<ul>
+
+  <li> <a>obs (number of observations within the feature set)</a>
+  <li> <a>NAs (number of NAs, i.e., missing values, within the feature set)</a>
+  <li> <a>min (minimum), mean (arithmetic mean), max (maximum), std_dev (standard deviation)</a>
+  <li> <a>1st_qu (1st quartile = lower quartile = 25%-quantile)</a>
+  <li> <a>median (median = 50%-quantile)</a>
+  <li> <a>3rd_qu (3rd quartile = upper quartile = 75%-quantile)</a>
+  <li> <a>co_var (coefficient of variation = standard deviation / arithmetic mean)</a>
+
+</ul>
+
+<h3> Instance Feature Values</h3>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:15 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> obs </th> <th> nas </th> <th> min </th> <th> qu_1st </th> <th> med </th> <th> mean </th> <th> qu_3rd </th> <th> max </th> <th> sd </th> <th> coeff_var </th>  </tr>
+  <tr> <td align="right"> nvarsOrig </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">  36 </td> <td align="right"> 1.1e+03 </td> <td align="right"> 7e+03 </td> <td align="right"> 3.9e+04 </td> <td align="right"> 3.6e+04 </td> <td align="right"> 1.3e+06 </td> <td align="right"> 1.1e+05 </td> <td align="right"> 2.7 </td> </tr>
+  <tr> <td align="right"> nclausesOrig </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> 2.1e+02 </td> <td align="right"> 9e+03 </td> <td align="right"> 5.9e+04 </td> <td align="right"> 1.8e+05 </td> <td align="right"> 2.1e+05 </td> <td align="right"> 1.6e+06 </td> <td align="right"> 2.9e+05 </td> <td align="right"> 1.6 </td> </tr>
+  <tr> <td align="right"> nvars </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 6.1e+02 </td> <td align="right">   0 </td> <td align="right"> 2.3e+04 </td> <td align="right"> 3.1e+03 </td> <td align="right"> 5.1 </td> </tr>
+  <tr> <td align="right"> nclauses </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 3.6e+03 </td> <td align="right">   0 </td> <td align="right"> 2.8e+05 </td> <td align="right"> 1.9e+04 </td> <td align="right"> 5.1 </td> </tr>
+  <tr> <td align="right"> reducedVars </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -3.9e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> 4.6e+03 </td> <td align="right"> 3.8e+02 </td> <td align="right"> -0.97 </td> </tr>
+  <tr> <td align="right"> reducedClauses </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -2.9e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> 1.7e+04 </td> <td align="right"> 1.1e+03 </td> <td align="right"> -3.9 </td> </tr>
+  <tr> <td align="right"> Pre.featuretime </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right"> 0.2 </td> <td align="right">   3 </td> <td align="right">  99 </td> <td align="right">  55 </td> <td align="right"> 1.2e+03 </td> <td align="right"> 2.2e+02 </td> <td align="right"> 2.2 </td> </tr>
+  <tr> <td align="right"> vars.clauses.ratio </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -4.2e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right">   1 </td> <td align="right"> 1.9e+02 </td> <td align="right"> -0.46 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.CLAUSE.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.097 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.25 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.CLAUSE.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.033 </td> <td align="right">   0 </td> <td align="right"> 0.92 </td> <td align="right"> 0.11 </td> <td align="right"> 3.3 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.CLAUSE.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.051 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.2 </td> <td align="right"> 3.9 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.CLAUSE.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.12 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.31 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.CLAUSE.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.089 </td> <td align="right">   0 </td> <td align="right"> 1.2 </td> <td align="right"> 0.26 </td> <td align="right">   3 </td> </tr>
+  <tr> <td align="right"> VCG.CLAUSE.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0036 </td> <td align="right">   0 </td> <td align="right"> 0.16 </td> <td align="right"> 0.015 </td> <td align="right"> 4.2 </td> </tr>
+  <tr> <td align="right"> VCG.CLAUSE.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.02 </td> <td align="right">   0 </td> <td align="right"> 0.39 </td> <td align="right"> 0.063 </td> <td align="right"> 3.2 </td> </tr>
+  <tr> <td align="right"> VCG.CLAUSE.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0022 </td> <td align="right">   0 </td> <td align="right"> 0.083 </td> <td align="right"> 0.0088 </td> <td align="right">   4 </td> </tr>
+  <tr> <td align="right"> VCG.CLAUSE.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.004 </td> <td align="right">   0 </td> <td align="right"> 0.19 </td> <td align="right"> 0.018 </td> <td align="right"> 4.4 </td> </tr>
+  <tr> <td align="right"> VCG.CLAUSE.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.071 </td> <td align="right">   0 </td> <td align="right"> 1.1 </td> <td align="right"> 0.23 </td> <td align="right"> 3.2 </td> </tr>
+  <tr> <td align="right"> UNARY </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -4.2e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right">   0 </td> <td align="right"> 1.9e+02 </td> <td align="right"> -0.46 </td> </tr>
+  <tr> <td align="right"> BINARY. </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -4.2e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right">   1 </td> <td align="right"> 1.9e+02 </td> <td align="right"> -0.46 </td> </tr>
+  <tr> <td align="right"> TRINARY. </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -4.2e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right">   1 </td> <td align="right"> 1.9e+02 </td> <td align="right"> -0.46 </td> </tr>
+  <tr> <td align="right"> Basic.featuretime </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0031 </td> <td align="right">   0 </td> <td align="right"> 0.2 </td> <td align="right"> 0.014 </td> <td align="right"> 4.4 </td> </tr>
+  <tr> <td align="right"> VCG.VAR.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0036 </td> <td align="right">   0 </td> <td align="right"> 0.16 </td> <td align="right"> 0.015 </td> <td align="right"> 4.2 </td> </tr>
+  <tr> <td align="right"> VCG.VAR.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 2.1 </td> <td align="right">   0 </td> <td align="right">  67 </td> <td align="right"> 7.2 </td> <td align="right"> 3.5 </td> </tr>
+  <tr> <td align="right"> VCG.VAR.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0024 </td> <td align="right">   0 </td> <td align="right"> 0.12 </td> <td align="right"> 0.011 </td> <td align="right"> 4.6 </td> </tr>
+  <tr> <td align="right"> VCG.VAR.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.17 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.38 </td> <td align="right"> 2.2 </td> </tr>
+  <tr> <td align="right"> VCG.VAR.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.2 </td> <td align="right">   0 </td> <td align="right"> 4.5 </td> <td align="right"> 0.73 </td> <td align="right"> 3.6 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.VAR.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.14 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.33 </td> <td align="right"> 2.4 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.VAR.stdev </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0058 </td> <td align="right">   0 </td> <td align="right"> 0.33 </td> <td align="right"> 0.031 </td> <td align="right"> 5.3 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.VAR.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.13 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.33 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.VAR.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.17 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.38 </td> <td align="right"> 2.2 </td> </tr>
+  <tr> <td align="right"> POSNEG.RATIO.VAR.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.041 </td> <td align="right">   0 </td> <td align="right"> 1.4 </td> <td align="right"> 0.18 </td> <td align="right"> 4.4 </td> </tr>
+  <tr> <td align="right"> HORNY.VAR.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0024 </td> <td align="right">   0 </td> <td align="right"> 0.11 </td> <td align="right"> 0.011 </td> <td align="right"> 4.5 </td> </tr>
+  <tr> <td align="right"> HORNY.VAR.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 1.6 </td> <td align="right">   0 </td> <td align="right">  37 </td> <td align="right"> 5.8 </td> <td align="right"> 3.6 </td> </tr>
+  <tr> <td align="right"> HORNY.VAR.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0016 </td> <td align="right">   0 </td> <td align="right"> 0.079 </td> <td align="right"> 0.008 </td> <td align="right"> 4.9 </td> </tr>
+  <tr> <td align="right"> HORNY.VAR.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.12 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.31 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> HORNY.VAR.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.21 </td> <td align="right">   0 </td> <td align="right"> 4.5 </td> <td align="right"> 0.72 </td> <td align="right"> 3.5 </td> </tr>
+  <tr> <td align="right"> horn.clauses.fraction </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right"> -4.2e+02 </td> <td align="right"> -5.1e+02 </td> <td align="right">   1 </td> <td align="right"> 1.9e+02 </td> <td align="right"> -0.46 </td> </tr>
+  <tr> <td align="right"> VG.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.003 </td> <td align="right">   0 </td> <td align="right"> 0.17 </td> <td align="right"> 0.014 </td> <td align="right"> 4.8 </td> </tr>
+  <tr> <td align="right"> VG.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.98 </td> <td align="right">   0 </td> <td align="right">  67 </td> <td align="right"> 5.1 </td> <td align="right"> 5.2 </td> </tr>
+  <tr> <td align="right"> VG.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0025 </td> <td align="right">   0 </td> <td align="right"> 0.15 </td> <td align="right"> 0.013 </td> <td align="right"> 5.2 </td> </tr>
+  <tr> <td align="right"> VG.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.064 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 0.21 </td> <td align="right"> 3.4 </td> </tr>
+  <tr> <td align="right"> KLB.featuretime </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.1 </td> <td align="right">   0 </td> <td align="right"> 5.5 </td> <td align="right"> 0.65 </td> <td align="right"> 6.2 </td> </tr>
+  <tr> <td align="right"> CG.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">  -1 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> -0.015 </td> <td align="right">   0 </td> <td align="right"> 0.2 </td> <td align="right"> 0.13 </td> <td align="right"> -8.9 </td> </tr>
+  <tr> <td align="right"> CG.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.012 </td> <td align="right">   0 </td> <td align="right"> 0.69 </td> <td align="right"> 0.072 </td> <td align="right"> 5.9 </td> </tr>
+  <tr> <td align="right"> CG.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">  -1 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> -0.016 </td> <td align="right">   0 </td> <td align="right"> 0.16 </td> <td align="right"> 0.13 </td> <td align="right"> -8.4 </td> </tr>
+  <tr> <td align="right"> CG.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0041 </td> <td align="right">   0 </td> <td align="right"> 0.25 </td> <td align="right"> 0.024 </td> <td align="right"> 5.9 </td> </tr>
+  <tr> <td align="right"> CG.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right"> -5.1e+02 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> -8.9 </td> <td align="right">   0 </td> <td align="right"> 3.2 </td> <td align="right">  67 </td> <td align="right"> -7.5 </td> </tr>
+  <tr> <td align="right"> cluster.coeff.mean </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">  -1 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> -0.011 </td> <td align="right">   0 </td> <td align="right"> 0.46 </td> <td align="right"> 0.14 </td> <td align="right"> -13 </td> </tr>
+  <tr> <td align="right"> cluster.coeff.coeff.variation </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.011 </td> <td align="right">   0 </td> <td align="right"> 0.35 </td> <td align="right"> 0.053 </td> <td align="right"> 4.9 </td> </tr>
+  <tr> <td align="right"> cluster.coeff.min </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">  -1 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> -0.013 </td> <td align="right">   0 </td> <td align="right"> 0.38 </td> <td align="right"> 0.14 </td> <td align="right"> -11 </td> </tr>
+  <tr> <td align="right"> cluster.coeff.max </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.011 </td> <td align="right">   0 </td> <td align="right"> 0.75 </td> <td align="right"> 0.081 </td> <td align="right"> 7.6 </td> </tr>
+  <tr> <td align="right"> cluster.coeff.entropy </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.034 </td> <td align="right">   0 </td> <td align="right"> 2.1 </td> <td align="right"> 0.18 </td> <td align="right"> 5.1 </td> </tr>
+  <tr> <td align="right"> CG.featuretime </td> <td align="right"> 572 </td> <td align="right"> 117 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.46 </td> <td align="right">   0 </td> <td align="right">  22 </td> <td align="right"> 2.8 </td> <td align="right"> 6.1 </td> </tr>
+   </table>
+
+
+
+
+<br>
+<h2> Summary of feature steps </h2>
+
+The following table summarizes the feature steps over all instances.
+<ul>
+  <li> size (percentage of features affected by this step)
+  <li> ok, ..., other (percentage of run status)
+  <li> cost_min, cost_mean, cost_max (range of costs for this step)
+  <li> cost_na (percentage of missing values occuring in costs)
+</ul>
+
+<br>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:15 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> size </th> <th> ok </th> <th> timeout </th> <th> memout </th> <th> presolved </th> <th> crash </th> <th> other </th> <th> unknown </th> <th> cost_min </th> <th> cost_mean </th> <th> cost_max </th> <th> cost_na </th>  </tr>
+  <tr> <td align="right"> ALL </td> <td align="right">   1 </td> <td align="right">  80 </td> <td align="right">  20 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 4.8 </td> <td align="right"> 3.4e+02 </td> <td align="right"> 1.2e+03 </td> <td align="right">   0 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Duplicated Features </h2>
+
+Underneath, you'll find blocks of duplicated instnace features, i.e., observations that have equal values over all features. Please note, that only a maximum of 5 duplicates per block are shown.<br>
+<br>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:15 2021 -->
+<table border=1>
+<tr> <th> block </th> <th> numbers </th> <th> instances </th>  </tr>
+  <tr> <td align="right">   1 </td> <td align="right"> 117 </td> <td> aes/mul_8_11.wcnf +++++++ aes/mul_8_13.wcnf +++++++ aes/mul_8_14.wcnf +++++++ aes/mul_8_3.wcnf +++++++ aes/mul_8_9.wcnf +++++++ ... </td> </tr>
+  <tr> <td align="right">   2 </td> <td align="right">   2 </td> <td> drmx-cryptogen/threshold128_3.wcnf +++++++ drmx-cryptogen/threshold128_5.wcnf </td> </tr>
+  <tr> <td align="right">   3 </td> <td align="right">   3 </td> <td> kbtree/kbtree9_7_3_5_80_2.wcsp.wcnf +++++++ kbtree/kbtree9_7_3_5_90_4.wcsp.wcnf +++++++ kbtree/kbtree9_7_3_5_90_5.wcsp.wcnf </td> </tr>
+  <tr> <td align="right">   4 </td> <td align="right">   3 </td> <td> maxone/3col140_5_1.shuffled.cnf.wcnf +++++++ maxone/3col140_5_10.shuffled.cnf.wcnf +++++++ maxone/3col140_5_2.shuffled.cnf.wcnf </td> </tr>
+  <tr> <td align="right">   5 </td> <td align="right">   2 </td> <td> maxone/3col140_5_5.shuffled.cnf.wcnf +++++++ maxone/3col140_5_9.shuffled.cnf.wcnf </td> </tr>
+  <tr> <td align="right">   6 </td> <td align="right">   2 </td> <td> tpr/b14-s_PathRelaxation_FS_25.wcnf +++++++ tpr/b14-s_PathRelaxation_FS_46.wcnf </td> </tr>
+   </table>
+
+
+</body>
+</html>

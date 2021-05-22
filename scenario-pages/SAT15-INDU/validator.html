@@ -2,7 +2,7 @@
 
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -70,33 +70,15 @@
 
 <h1>Output of data validator</h1>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="output"><pre class="knitr r">## % [WARNING]: Not found: SAT15-INDU/ground_truth.arff (maybe you want to add it)
-## % [WARNING]: Not found: SAT15-INDU/feature_costs.arff (maybe you want to add it)
-## % [WARNING]: Not found: SAT15-INDU/citation.bib (maybe you want to add it)
-## % [WARNING]: Have not found algorithm_cutoff_memory
-## % [WARNING]: Have not found features_stochastic
-## % [WARNING]: Have not found algortihms_deterministics
-## % [WARNING]: Have not found algorithms_stochastic
-## % [WARNING]: Feature vector found twice: 7665.0,26841.0,4819.0,24472.0,0.590578958,0.096804511,0.06,0.196918928,0.309337641,1.158556623,0.0,1.0,1.393539907,0.000555327,0.52091471,0.000415024,0.008715501,1.060361387,0.0,0.603710363,0.871404054,0.0,0.000555327,0.64730308,0.000326904,0.00715103,2.366858896,0.213446865,0.178005352,0.0,0.833333333,2.87186488,0.00035989,0.821521228,4.0863e-05,0.004740111,2.375818767,0.765773128,0.000459694,0.64398165,0.000245178,0.005434783,0.04,0.000750439,1.308921096,0.000204315,0.04225237,3.347461383,0.181538886,0.489824086,0.001941711,0.571428571,3.3534778,0.4
-## % [WARNING]: Feature vector found twice: 4927.0,16333.0,2805.0,14051.0,0.756506239,0.16240837,0.04,0.19962992,0.294873776,1.172596267,0.0,1.0,1.408887014,0.000957043,0.434949739,0.000713012,0.010695187,1.112571509,0.0,0.5874315,0.85310654,-0.0,0.000957043,0.592265287,0.000498185,0.014945555,2.490164891,0.192932443,0.159694623,0.0,0.777777778,2.888203787,0.000614263,0.72622058,7.1169e-05,0.011031243,2.254783917,0.756387446,0.000822976,0.549967916,0.000427016,0.010034873,0.02,0.001307771,1.087979005,0.000355847,0.040708846,3.382992647,0.178186838,0.464228011,0.00351481,0.571428571,3.364763782,0.2
-## % Read SAT15-INDU/description.txt
-## % Read SAT15-INDU/algorithm_runs.arff
-## % Read SAT15-INDU/feature_values.arff
-## % Read SAT15-INDU/feature_runstatus.arff
-## % Read /home/larsko/work/coseal/aslib_data/SAT15-INDU/cv.arff
-## % 1-th repetition: 30,30,30,30,30,30,30,30,30,30 distribution
-## % Used Feature Steps (1): ALL
-## % Remove features: 
-## % 
-## % Used features (54): reducedVars,KLB-featuretime,POSNEG-RATIO-VAR-entropy,horn-clauses-fraction,VCG-CLAUSE-max,VCG-VAR-mean,HORNY-VAR-coeff-variation,VG-mean,nvarsOrig,TRINARY+,POSNEG-RATIO-CLAUSE-coeff-variation,nclauses,CG-coeff-variation,VCG-CLAUSE-entropy,CG-max,VCG-VAR-entropy,cluster-coeff-coeff-variation,UNARY,POSNEG-RATIO-CLAUSE-min,cluster-coeff-max,POSNEG-RATIO-CLAUSE-max,vars-clauses-ratio,cluster-coeff-min,POSNEG-RATIO-VAR-min,HORNY-VAR-min,HORNY-VAR-max,CG-featuretime,POSNEG-RATIO-VAR-max,Basic-featuretime,nclausesOrig,CG-min,VCG-VAR-max,VCG-CLAUSE-mean,VCG-VAR-min,BINARY+,POSNEG-RATIO-CLAUSE-entropy,VCG-CLAUSE-coeff-variation,VG-coeff-variation,HORNY-VAR-entropy,cluster-coeff-entropy,nvars,POSNEG-RATIO-VAR-mean,HORNY-VAR-mean,POSNEG-RATIO-VAR-stdev,cluster-coeff-mean,VG-min,VCG-VAR-coeff-variation,reducedClauses,Pre-featuretime,VCG-CLAUSE-min,POSNEG-RATIO-CLAUSE-mean,CG-mean,CG-entropy,VG-max
-## % 
-## % Check Consistency and Completeness of input data
-## % Instances: 			 300
-## % Incomplete Feature Vector: 	 0
-## % Unsolvable Instances (status): 	 17
-## % Valid Instances: 			 283
-## % Presolved: 			 0
-## % Average Feature Costs on all features: 	 0.0000
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in file.path(aslib.validator.dir, &quot;data_check_tool_python/src/main.py&quot;): object 'aslib.validator.dir' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in eval(expr, envir, enclos): object 'fn.main' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): cannot coerce type 'closure' to vector of type 'character'
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in shortenPathsInValidator(s, scenario.dir): object 's' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): object 's' not found
 </pre></div>
 
 </div></div>

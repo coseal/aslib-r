@@ -2,7 +2,7 @@
 
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -70,37 +70,15 @@
 
 <h1>Output of data validator</h1>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in system3(&quot;python2&quot;, args, stdout = TRUE, stderr = TRUE): Command: python2 ~/work/coseal/aslib-spec//data_check_tool_python/src/main.py --dir /home/larsko/work/coseal/aslib_data/OPENML-WEKA-2017; exit code: 255; output: % [WARNING]: Not found: /home/larsko/work/coseal/aslib_data/OPENML-WEKA-2017/ground_truth.arff (maybe you want to add it)
-## % [WARNING]: Not found: /home/larsko/work/coseal/aslib_data/OPENML-WEKA-2017/feature_costs.arff (maybe you want to add it)
-## % [WARNING]: Not found: /home/larsko/work/coseal/aslib_data/OPENML-WEKA-2017/citation.bib (maybe you want to add it)
-## [ERROR]: Have not found algorithm_cutoff_time
-## % Read /home/larsko/work/coseal/aslib_data/OPENML-WEKA-2017/description.txt
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in file.path(aslib.validator.dir, &quot;data_check_tool_python/src/main.py&quot;): object 'aslib.validator.dir' not found
 </pre></div>
-<div class="output"><pre class="knitr r">## % [WARNING]: Not found: MIP-2016/ground_truth.arff (maybe you want to add it)
-## % [WARNING]: Not found: MIP-2016/citation.bib (maybe you want to add it)
-## % [WARNING]: Have not found algorithm_cutoff_memory
-## % [WARNING]: Have not found features_stochastic
-## % [WARNING]: Have not found algortihms_deterministics
-## % [WARNING]: Have not found algorithms_stochastic
-## % Read MIP-2016/description.txt
-## % Read MIP-2016/algorithm_runs.arff
-## % Read MIP-2016/feature_values.arff
-## % Read MIP-2016/feature_runstatus.arff
-## % Read MIP-2016/feature_costs.arff
-## % Read /home/larsko/work/coseal/aslib_data/MIP-2016/cv.arff
-## % 1-th repetition: 22,22,22,22,22,22,22,22,21,21 distribution
-## % Used Feature Steps (1): base
-## % Remove features: 
-## % 
-## % Used features (143): rhs_c_0_avg,obj_coef_per_sqr_constr2_avg,diffGap_varcoef,a_normalized_varcoefs2_varcoef,diffObj_median,obj_coef_per_sqr_constr2_std,diffObj_q90mq10,new_col,mipgap,obj_coef_per_sqr_constr1_std,vcg_var_weight0_varcoef,vcg_constr_deg1_varcoef,vcg_constr_deg0_q90mq10,obj_coefs1_avg,obj_coef_per_constr1_std,vcg_constr_deg0_median,vcg_constr_weight2_varcoef,n_constr,lp_avg,ratio_unbounded_disc,vcg_constr_deg0_avg,rhs_c_1_avg,vcg_var_weight2_avg,obj_coefs2_avg,clique_table,lp_l2_avg,vcg_constr_deg2_q90mq10,vcg_var_deg0_varcoef,obj_coef_per_constr2_avg,diffObj_avg,a_normalized_varcoefs2_avg,vcg_var_weight1_avg,vcg_var_deg1_varcoef,diffBestObjUp_q90mq10,probtype,diffBestObjUp_median,obj_coef_per_constr1_avg,vcg_var_deg0_avg,nq_constr,obj_coef_per_constr0_avg,A_ij_normalized2_avg,lp_linf,rhs_c_2_avg,ratio_i+_variables,itcnt_max,iinf_varcoef,obj_coef_per_sqr_constr0_std,impliedBoundCuts,cliqueCuts,vcg_var_weight0_avg,vcg_constr_weight1_varcoef,num_b_variables,support_size_q90mq10,diffGap_avg,pre_t,obj_coef_per_constr0_std,vcg_constr_weight2_avg,numnewsolution_sum,ratio_s_variables,num_unbounded_disc,diffBestInt_avg,num_c_variables,gomoryFractionalCuts,A_ij_normalized1_avg,diffGap_median,support_size_varcoef,numcuts_sum,diffBestObjUp_varcoef,a_normalized_varcoefs1_varcoef,obj_coef_per_sqr_constr0_avg,vcg_constr_deg1_avg,obj_coef_per_sqr_constr1_avg,vcg_constr_deg2_varcoef,vcg_var_deg2_avg,vcg_constr_deg2_avg,num_n_variables,iinf_avg,ratio_n_variables,vcg_var_deg0_q90mq10,obj_coefs0_std,a_normalized_varcoefs0_avg,vcg_var_deg2_median,ratio_b_variables,covcnt,A_ij_normalized1_varcoef,nodeleft_varcoef,vcg_var_deg2_varcoef,diffBestInt_q90mq10,obj_coefs0_avg,nodeleft_avg,vcg_constr_weight1_avg,nq_nzcnt,diffBestInt_median,n_nzcnt,vcg_var_deg1_q90mq10,vcg_var_weight1_varcoef,ratio_c_variables,vcg_var_deg1_avg,new_nonzero,vcg_constr_deg1_median,vcg_var_deg1_median,diffGap_q90mq10,iinf_median,vcg_constr_deg0_varcoef,A_ij_normalized0_avg,a_normalized_varcoefs0_varcoef,diffBestObjUp_avg,support_size_median,new_row,nodecnt,obj_coef_per_constr2_std,obj_coefs2_std,vcg_var_deg2_q90mq10,rhs_c_0_varcoef,mixedIntegerRoundingCuts,iinf_q90mq10,rel_t,clqcnt,vcg_constr_weight0_varcoef,lp_objval,A_ij_normalized0_varcoef,vcg_constr_weight0_avg,a_normalized_varcoefs1_avg,num_s_variables,nq_vars,diffBestInt_varcoef,vcg_constr_deg1_q90mq10,vcg_constr_deg2_median,vcg_var_deg0_median,ratio_i_variables,obj_coefs1_std,num_i+_variables,support_size_avg,newin_sum,numfeas,num_i_variables,flowCuts,vcg_var_weight2_varcoef,diffObj_varcoef,n_vars,rhs_c_1_varcoef,rhs_c_2_varcoef,A_ij_normalized2_varcoef
-## % 
-## % Check Consistency and Completeness of input data
-## % Instances: 				 218
-## % Incomplete Feature Vector: 	 0
-## % Unsolvable Instances (status): 	 0
-## % Valid Instances: 									 218
-## % Presolved: 				 0
-## % Average Feature Costs on all features: 	 49.0971
+<div class="error"><pre class="knitr r">## Error in eval(expr, envir, enclos): object 'fn.main' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): cannot coerce type 'closure' to vector of type 'character'
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in shortenPathsInValidator(s, scenario.dir): object 's' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): object 's' not found
 </pre></div>
 
 </div></div>

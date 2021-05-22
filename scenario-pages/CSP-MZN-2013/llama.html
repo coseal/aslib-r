@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:54:17 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:25:08 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.797 </td> <td> 3752.469 </td> <td>  0.000 </td> </tr>
@@ -105,10 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.516</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">8789.168</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">492.881</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.516</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">8789.168</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">492.881</FONT></b> </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td>  0.709 </td> <td> 5355.835 </td> <td> 143.845 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.743</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4773.259</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">98.035</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td>  0.742 </td> <td> 4780.529 </td> <td> 98.008 </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.746</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4708.379</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">92.097</FONT></b> </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.572</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">7805.987</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">390.310</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.753</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">4592.359</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">80.581</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td>  0.736 </td> <td> 4904.509 </td> <td> 115.085 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.777</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">4159.977</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">43.358</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.777</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">4167.789</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">44.622</FONT></b> </td> </tr>
    </table>
 
 
@@ -121,21 +123,23 @@ The following default feature steps were used for model building:
 <p>
 Number of presolved instances: <code class="knitr inline">0</code>
 <p>
-The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">3.5097222 &times; 10<sup>5</sup></code>
-or on average: <code class="knitr inline">75.607975</code>
+The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
+or on average: <code class="knitr inline">0</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">155</code> / <code class="knitr inline">155</code> features:
+The feature steps correspond to the following <code class="knitr inline">155</code> / <code class="knitr inline">155</code> instance features:
 <p>
 c_avg_deg_cons, c_avg_dom_cons, c_avg_domdeg_cons, c_bounds_d, c_bounds_r, <br>c_bounds_z, c_cv_deg_cons, c_cv_dom_cons, c_cv_domdeg_cons, c_domain, <br>c_ent_deg_cons, c_ent_dom_cons, c_ent_domdeg_cons, c_logprod_deg_cons, c_logprod_dom_cons, <br>c_max_deg_cons, c_max_dom_cons, c_max_domdeg_cons, c_min_deg_cons, c_min_dom_cons, <br>c_min_domdeg_cons, c_num_cons, c_priority, c_ratio_cons, c_sum_ari_cons, <br>c_sum_dom_cons, c_sum_domdeg_cons, d_array_cons, d_bool_cons, d_bool_vars, <br>d_float_cons, d_float_vars, d_int_cons, d_int_vars, d_ratio_array_cons, <br>d_ratio_bool_cons, d_ratio_bool_vars, d_ratio_float_cons, d_ratio_float_vars, d_ratio_int_cons, <br>d_ratio_int_vars, d_ratio_set_cons, d_ratio_set_vars, d_set_cons, d_set_vars, <br>gc_all_diff, gc_all_equal, gc_among, gc_array_int, gc_array_set, <br>gc_at_least_most, gc_bin_packing, gc_bool_lin, gc_circuit, gc_count, <br>gc_cumulative, gc_decr_inc, gc_diffn, gc_disjoint, gc_global_card, <br>gc_global_cons, gc_inverse, gc_link_set, gc_max_min_int, gc_member, <br>gc_nvalue, gc_precede, gc_range, gc_ratio_globs, gc_regular, <br>gc_schedule, gc_set_weights, gc_sort, gc_table, o_de, <br>o_de_di, o_deg, o_deg_avg, o_deg_cons, o_deg_std, <br>o_di, o_di_de, o_dom, o_dom_avg, o_dom_deg, <br>o_dom_std, s_bool_search, s_first_fail, s_goal, s_indomain_max, <br>s_indomain_min, s_input_order, s_int_search, s_labeled_vars, s_other_val, <br>s_other_var, s_set_search, v_avg_deg_vars, v_avg_dom_vars, v_avg_domdeg_vars, <br>v_cv_deg_vars, v_cv_dom_vars, v_cv_domdeg_vars, v_def_vars, v_ent_deg_vars, <br>v_ent_dom_vars, v_ent_domdeg_vars, v_intro_vars, v_logprod_deg_vars, v_logprod_dom_vars, <br>v_max_deg_vars, v_max_dom_vars, v_max_domdeg_vars, v_min_deg_vars, v_min_dom_vars, <br>v_min_domdeg_vars, v_num_aliases, v_num_consts, v_num_vars, v_ratio_bounded, <br>v_ratio_vars, v_sum_deg_vars, v_sum_dom_vars, v_sum_domdeg_vars, gr_avg_clust_cg, <br>gr_avg_deg_cg, gr_avg_deg_vg, gr_avg_diam_vg, gr_cv_clust_cg, gr_cv_deg_cg, <br>gr_cv_deg_vg, gr_cv_diam_vg, gr_ent_clust_cg, gr_ent_deg_cg, gr_ent_deg_vg, <br>gr_ent_diam_vg, gr_max_clust_cg, gr_max_deg_cg, gr_max_deg_vg, gr_max_diam_vg, <br>gr_min_clust_cg, gr_min_deg_cg, gr_min_deg_vg, gr_min_diam_vg, dy_sols, <br>dy_props, dy_nodes, dy_fails, dy_depth, dy_peak, <br>dy_ratio_props, dy_ratio_nodes, dy_fzn_time, dy_static_time, dy_tot_time<br>
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">11</code> to <code class="knitr inline">9</code>, resulting in a PAR10 score of <code class="knitr inline">4168.350</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">5</code> of the originally <code class="knitr inline">115</code> features resulted in a PAR10 score of <code class="knitr inline">4119.360</code>.
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">11</code> to <code class="knitr inline">9</code>, resulting in a PAR10 score of <code class="knitr inline">4164.100</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">5</code> of the originally <code class="knitr inline">115</code> features resulted in a PAR10 score of <code class="knitr inline">4125.715</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br>c_max_dom_cons, v_min_domdeg_vars, v_ratio_vars, gr_cv_deg_cg, gr_max_diam_vg<br><br><br>Selected Solvers:<br>bprolog, fzn2smt, g12cpx, g12lazyfd, g12mip, <br>gecode, izplus, minisatid, ortools
+Selected Features:<br>c_max_dom_cons, c_ratio_cons, o_di_de, v_ent_deg_vars, v_min_domdeg_vars<br><br><br>Selected Solvers:<br>bprolog, fzn2smt, g12cpx, g12lazyfd, g12mip, <br>gecode, izplus, minisatid, ortools
 <p>
 
 

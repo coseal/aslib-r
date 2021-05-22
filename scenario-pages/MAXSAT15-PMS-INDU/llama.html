@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:56:24 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:12 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.927 </td> <td> 1357.946 </td> <td>  0.000 </td> </tr>
@@ -105,11 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.880</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">2231.047</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">118.358</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.880</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">2231.047</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">118.358</FONT></b> </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td>  0.890 </td> <td> 2022.319 </td> <td> 71.361 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1814.573</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">52.300</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.905</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1754.732</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">46.370</FONT></b> </td> </tr>
-  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> 1830.388 </td> <td> 68.116 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td>  0.900 </td> <td> 1845.000 </td> <td> <b><FONT COLOR="#FFAAAA">55.772</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.903</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1783.047</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">47.730</FONT></b> </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">1839.296</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">77.024</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1830.388</FONT></b> </td> <td> 68.116 </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td>  0.889 </td> <td> 2063.111 </td> <td> 85.198 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.915</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">1580.427</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">33.795</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.912</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">1646.440</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">45.898</FONT></b> </td> </tr>
    </table>
 
 
@@ -125,18 +126,20 @@ Number of presolved instances: <code class="knitr inline">0</code>
 The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
 or on average: <code class="knitr inline">NA</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">37</code> / <code class="knitr inline">37</code> features:
+The feature steps correspond to the following <code class="knitr inline">37</code> / <code class="knitr inline">37</code> instance features:
 <p>
 f_1, f_2, f_3, f_4, f_5, <br>f_6, f_7, f_8, f_9, f_10, <br>f_11, f_12, f_13, f_14, f_15, <br>f_16, f_17, f_18, f_19, f_20, <br>f_21, f_22, f_23, f_24, f_25, <br>f_26, f_27, f_28, f_29, f_30, <br>f_31, f_32, f_33, f_34, f_35, <br>f_36, f_37
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">29</code> to <code class="knitr inline">7</code>, resulting in a PAR10 score of <code class="knitr inline">1479.311</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">5</code> of the originally <code class="knitr inline">29</code> features resulted in a PAR10 score of <code class="knitr inline">1520.770</code>.
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">29</code> to <code class="knitr inline">7</code>, resulting in a PAR10 score of <code class="knitr inline">1561.791</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">5</code> of the originally <code class="knitr inline">29</code> features resulted in a PAR10 score of <code class="knitr inline">1524.254</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br>f_8, f_11, f_29, f_32, f_36<br><br><br>Selected Solvers:<br>maxino.kdyn, WPM3.2015.co, WMaxSatz., ratselfax.cnf, Open.WBO.R, <br>LMHS.I, MaxHS
+Selected Features:<br>f_3, f_9, f_11, f_15, f_36<br><br><br>Selected Solvers:<br>CCEHC2akms, ILP.2015, LMHS.I, MaxHS, Open.WBO.R, <br>WPM3.2015.co, maxino.k16
 <p>
 
 

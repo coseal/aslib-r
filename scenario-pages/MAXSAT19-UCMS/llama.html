@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+<title>Some LLAMA benchmark results</title>
+</head>
+<body>
+
+
+<h2> LLAMA results </h2>
+
+All results were produced by using the cross-validation splits in the repository with
+<code class="knitr inline">10</code> folds and <code class="knitr inline">1</code> repetitions.<br>
+The best values within a type (i.e., baseline (except for vbs), classif, regr and cluster) and performance measure (i.e., Percentage solved, PAR10, MCP) are colored green. Furthermore, the three best values over all groups within a performance measure are colored pink, the absolute best one is red. 
+
+<p>
+
+The performance is measured in three different ways.
+<ul>
+<li><strong>Percentage solved</strong> records the percentage of problem
+instances in the data set for which the selector selected an algorithm that was
+able to solve it with runstatus "ok" and the algorithm time plus the feature
+computation time was at most the timeout.</li>
+<li>The <strong>penalized average runtime score (PAR10)</strong> measures the time required to
+run on all problem instances. If an instance was solved within the timeout by
+the algorithm the selector chose, the
+actual runtime is taken. If a timeout occurred, the timeout value was multiplied
+by 10.</li>
+<li>The <strong>misclassification penalty (mcp)</strong> measures the additional time required to run
+on all problems if sub-optimal algorithms were used. That is, if an algorithm is
+run on a problem instance that is not the best, a performance loss is incurred.
+There are no additional penalties or factors for timeouts. The virtual best
+solver always has a misclassification penalty of zero.</li>
+</ul>
+
+<p>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:15 2021 -->
+<table border=1>
+<tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
+  <tr> <td> baseline </td> <td> vbs </td> <td>  0.769 </td> <td> 8377.272 </td> <td>  0.000 </td> </tr>
+  <tr> <td> baseline </td> <td> singleBest </td> <td> <b><FONT COLOR="#00FF00"> 0.677</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">11703.780</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">324.411</FONT></b> </td> </tr>
+  <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.677</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">11703.780</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">324.411</FONT></b> </td> </tr>
+  <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.677</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">11703.780</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">324.411</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> rpart </td> <td>  0.703 </td> <td> 10979.251 </td> <td> 251.551 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.706</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">10846.879</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">213.988</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FF0000"> 0.713</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">10600.157</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">195.542</FONT></b> </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.673</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">12048.544</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">342.396</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> lm </td> <td>  0.694 </td> <td> 11295.926 </td> <td> 266.618 </td> </tr>
+  <tr> <td> regr </td> <td> rpart </td> <td>  0.689 </td> <td> 11507.334 </td> <td> 312.707 </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.712</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">10671.904</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">209.066</FONT></b> </td> </tr>
+   </table>
+
+
+<p>
+
+
+The following default feature steps were used for model building:
+<p>
+<code class="knitr inline">ALL</code>
+<p>
+Number of presolved instances: <code class="knitr inline">0</code>
+<p>
+The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
+or on average: <code class="knitr inline">0</code>
+<p>
+The feature steps correspond to the following <code class="knitr inline">54</code> / <code class="knitr inline">54</code> instance features:
+<p>
+nvarsOrig, nclausesOrig, nvars, nclauses, reducedVars, <br>reducedClauses, Pre.featuretime, vars.clauses.ratio, POSNEG.RATIO.CLAUSE.mean, POSNEG.RATIO.CLAUSE.coeff.variation, <br>POSNEG.RATIO.CLAUSE.min, POSNEG.RATIO.CLAUSE.max, POSNEG.RATIO.CLAUSE.entropy, VCG.CLAUSE.mean, VCG.CLAUSE.coeff.variation, <br>VCG.CLAUSE.min, VCG.CLAUSE.max, VCG.CLAUSE.entropy, UNARY, BINARY., <br>TRINARY., Basic.featuretime, VCG.VAR.mean, VCG.VAR.coeff.variation, VCG.VAR.min, <br>VCG.VAR.max, VCG.VAR.entropy, POSNEG.RATIO.VAR.mean, POSNEG.RATIO.VAR.stdev, POSNEG.RATIO.VAR.min, <br>POSNEG.RATIO.VAR.max, POSNEG.RATIO.VAR.entropy, HORNY.VAR.mean, HORNY.VAR.coeff.variation, HORNY.VAR.min, <br>HORNY.VAR.max, HORNY.VAR.entropy, horn.clauses.fraction, VG.mean, VG.coeff.variation, <br>VG.min, VG.max, KLB.featuretime, CG.mean, CG.coeff.variation, <br>CG.min, CG.max, CG.entropy, cluster.coeff.mean, cluster.coeff.coeff.variation, <br>cluster.coeff.min, cluster.coeff.max, cluster.coeff.entropy, CG.featuretime
+<p>
+
+
+
+<h3> Algorithm and Feature Subset Selection </h3>
+
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">7</code> to <code class="knitr inline">4</code>, resulting in a PAR10 score of <code class="knitr inline">10107.083</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">54</code> features resulted in a PAR10 score of <code class="knitr inline">10231.654</code>.
+Below, you can find the list of the selected features and solvers:
+
+<p>
+Selected Features:<br>nvarsOrig, nclausesOrig, VG.max<br><br>Selected Solvers:<br>MaxHS, Open.WBO.ms.pre, UWrMaxSAT, maxino2018
+<p>
+
+
+</body>
+</html>
+

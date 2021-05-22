@@ -2,7 +2,7 @@
 
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -70,30 +70,15 @@
 
 <h1>Output of data validator</h1>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="output"><pre class="knitr r">## % [WARNING]: Not found: TTP-2016/ground_truth.arff (maybe you want to add it)
-## % [WARNING]: Not found: TTP-2016/feature_costs.arff (maybe you want to add it)
-## % [WARNING]: Have not found algorithm_cutoff_memory
-## % [WARNING]: Have not found features_stochastic
-## % [WARNING]: Have not found algortihms_deterministics
-## % [WARNING]: Have not found algorithms_stochastic
-## % Read TTP-2016/description.txt
-## % Read TTP-2016/algorithm_runs.arff
-## % Read TTP-2016/feature_values.arff
-## % Read TTP-2016/feature_runstatus.arff
-## % Read /home/larsko/work/coseal/aslib_data/TTP-2016/cv.arff
-## % 1-th repetition: 972,972,972,972,972,972,972,972,972,972 distribution
-## % Used Feature Steps (1): ALL
-## % Remove features: 
-## % 
-## % Used features (55): distance_median,nnds_min,mst_dists_sd,mst_dists_median,mst_depth_median,mst_depth_max,chull_points_on_hull,centroid_mean_distance_to_centroid,nnds_sd,distance_mode_mean,distance_mean,distance_min,distance_mode_frequency,mst_depth_min,cluster_01pct_mean_distance_to_centroid,cluster_01pct_number_of_clusters,chull_area,angle_mean,centroid_max_distance_to_centroid,mst_depth_sd,RENTINGRATIO,cluster_05pct_mean_distance_to_centroid,nnds_varcoef,angle_sd,centroid_min_distance_to_centroid,mst_dists_sum,KNAPSACKDATATYPE,angle_min,MAXSPEED,nnds_mean,mst_depth_mean,angle_max,centroid_centroid_y,mst_dists_mean,cluster_10pct_mean_distance_to_centroid,distance_mean_tour_length,centroid_centroid_x,mst_dists_max,mst_dists_min,DIMENSION,ITEMSPERCITY,MINSPEED,nnds_max,distance_max,nnds_median,distance_mode_quantity,distance_sd,cluster_10pct_number_of_clusters,NUMBEROFITEMS,CAPACITYOFKNAPSACK,distance_distances_shorter_mean_distance,modes_number,angle_median,cluster_05pct_number_of_clusters,distance_distinct_distances
-## % 
-## % Check Consistency and Completeness of input data
-## % Instances: 			 9720
-## % Incomplete Feature Vector: 	 0
-## % Unsolvable Instances (status): 	 0
-## % Valid Instances: 			 9720
-## % Presolved: 			 0
-## % Average Feature Costs on all features: 	 0.0000
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in file.path(aslib.validator.dir, &quot;data_check_tool_python/src/main.py&quot;): object 'aslib.validator.dir' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in eval(expr, envir, enclos): object 'fn.main' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): cannot coerce type 'closure' to vector of type 'character'
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in shortenPathsInValidator(s, scenario.dir): object 's' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): object 's' not found
 </pre></div>
 
 </div></div>

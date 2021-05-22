@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+  <title>Algorithm performance overview</title>
+</head>
+<body>
+
+
+<h2> Overview of performance values </h2>
+
+The following statistics were calculated from the performance values of each algorithm:
+<ul>
+
+  <li> <a>obs (number of observations within performance values)</a>
+  <li> <a>nas (number of NAs, i.e., missing values, within performance values)</a>
+  <li> <a>min (minimum), mean (arithmetic mean), max (maximum), sd (standard deviation)</a>
+  <li> <a>qu_1st (1st quartile = lower quartile = 25%-quantile)</a>
+  <li> <a>med (median = 50%-quantile)</a>
+  <li> <a>qu_3rd (3rd quartile = upper quartile = 75%-quantile)</a>
+  <li> <a>coeff_var (coefficient of variation = standard deviation / arithmetic mean)</a>
+
+</ul>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:30:45 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> obs </th> <th> nas </th> <th> min </th> <th> qu_1st </th> <th> med </th> <th> mean </th> <th> qu_3rd </th> <th> max </th> <th> sd </th> <th> coeff_var </th>  </tr>
+  <tr> <td align="right"> abcdsat_r18 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.607502 </td> <td align="right"> 401.026 </td> <td align="right"> 5000.04 </td> <td align="right"> 2905.42 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.02 </td> <td align="right"> 2225.27 </td> <td align="right"> 0.765903 </td> </tr>
+  <tr> <td align="right"> CaDiCaL </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.595971 </td> <td align="right"> 295.856 </td> <td align="right"> 3379.47 </td> <td align="right"> 2813.53 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2183.59 </td> <td align="right"> 0.776101 </td> </tr>
+  <tr> <td align="right"> Candy </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 3.05981 </td> <td align="right"> 598.512 </td> <td align="right">  5000.3 </td> <td align="right"> 3273.41 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right">  2142.7 </td> <td align="right"> 0.654577 </td> </tr>
+  <tr> <td align="right"> cms55.main.all4fixed </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.0878539 </td> <td align="right"> 295.716 </td> <td align="right"> 2257.04 </td> <td align="right"> 2647.31 </td> <td align="right"> 5000.66 </td> <td align="right"> 5001.01 </td> <td align="right"> 2195.92 </td> <td align="right"> 0.829489 </td> </tr>
+  <tr> <td align="right"> COMiniSatPS_Pulsar_drup </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.22654 </td> <td align="right"> 245.378 </td> <td align="right"> 3224.43 </td> <td align="right"> 2772.88 </td> <td align="right"> 5000.66 </td> <td align="right"> 5001.02 </td> <td align="right"> 2251.83 </td> <td align="right"> 0.81209 </td> </tr>
+  <tr> <td align="right"> expGlucose </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.863128 </td> <td align="right"> 638.242 </td> <td align="right">  5000.1 </td> <td align="right"> 3160.99 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2115.09 </td> <td align="right"> 0.669122 </td> </tr>
+  <tr> <td align="right"> YalSAT </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.016957 </td> <td align="right"> 5000.06 </td> <td align="right"> 5000.33 </td> <td align="right">  4278.8 </td> <td align="right"> 5000.57 </td> <td align="right"> 5001.01 </td> <td align="right">  1734.9 </td> <td align="right"> 0.405464 </td> </tr>
+  <tr> <td align="right"> smallsat </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.496339 </td> <td align="right"> 337.374 </td> <td align="right"> 4585.72 </td> <td align="right"> 2858.81 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.02 </td> <td align="right"> 2239.94 </td> <td align="right"> 0.783522 </td> </tr>
+  <tr> <td align="right"> Maple_LCM_Scavel_200_fix2 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.593495 </td> <td align="right"> 249.338 </td> <td align="right">  2152.4 </td> <td align="right"> 2633.62 </td> <td align="right"> 5000.62 </td> <td align="right"> 5001.01 </td> <td align="right"> 2276.29 </td> <td align="right"> 0.864319 </td> </tr>
+  <tr> <td align="right"> Maple_LCM_Scavel_fix2 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.640118 </td> <td align="right"> 229.801 </td> <td align="right"> 1761.32 </td> <td align="right"> 2553.79 </td> <td align="right"> 5000.62 </td> <td align="right"> 5001.01 </td> <td align="right"> 2247.29 </td> <td align="right"> 0.879984 </td> </tr>
+  <tr> <td align="right"> Maple_LCM_M1 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.874415 </td> <td align="right"> 267.557 </td> <td align="right"> 2947.35 </td> <td align="right"> 2758.99 </td> <td align="right"> 5000.63 </td> <td align="right"> 5001.01 </td> <td align="right"> 2260.34 </td> <td align="right"> 0.819263 </td> </tr>
+  <tr> <td align="right"> Maple_LCM.BCrestart_M1 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.87234 </td> <td align="right"> 263.926 </td> <td align="right"> 2797.68 </td> <td align="right"> 2738.17 </td> <td align="right"> 5000.62 </td> <td align="right"> 5001.02 </td> <td align="right"> 2235.69 </td> <td align="right"> 0.816492 </td> </tr>
+  <tr> <td align="right"> Maple_LCM.BCrestart </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.393768 </td> <td align="right">  266.31 </td> <td align="right"> 2794.76 </td> <td align="right"> 2759.61 </td> <td align="right"> 5000.69 </td> <td align="right"> 5001.01 </td> <td align="right"> 2234.17 </td> <td align="right"> 0.809598 </td> </tr>
+  <tr> <td align="right"> Maple_CM_ordUIP. </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.91849 </td> <td align="right"> 280.165 </td> <td align="right"> 2553.84 </td> <td align="right"> 2678.01 </td> <td align="right"> 5000.56 </td> <td align="right"> 5001.02 </td> <td align="right"> 2225.36 </td> <td align="right"> 0.830975 </td> </tr>
+  <tr> <td align="right"> Maple_CM_ordUIP </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.936933 </td> <td align="right"> 281.154 </td> <td align="right"> 2536.13 </td> <td align="right"> 2676.37 </td> <td align="right"> 5000.65 </td> <td align="right"> 5001.01 </td> <td align="right"> 2225.29 </td> <td align="right"> 0.831458 </td> </tr>
+  <tr> <td align="right"> Maple_CM_Dist </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.684711 </td> <td align="right"> 258.113 </td> <td align="right"> 2574.19 </td> <td align="right">  2654.3 </td> <td align="right"> 5000.61 </td> <td align="right"> 5001.01 </td> <td align="right"> 2255.31 </td> <td align="right"> 0.849681 </td> </tr>
+  <tr> <td align="right"> Maple_CM </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.906671 </td> <td align="right"> 250.732 </td> <td align="right"> 2075.64 </td> <td align="right"> 2617.72 </td> <td align="right"> 5000.61 </td> <td align="right"> 5001.01 </td> <td align="right"> 2251.18 </td> <td align="right"> 0.859976 </td> </tr>
+  <tr> <td align="right"> MapleLCMDistChronoBT </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.662318 </td> <td align="right"> 205.195 </td> <td align="right"> 2080.17 </td> <td align="right"> 2520.49 </td> <td align="right"> 5000.57 </td> <td align="right"> 5001.01 </td> <td align="right"> 2230.91 </td> <td align="right"> 0.88511 </td> </tr>
+  <tr> <td align="right"> Lingeling </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 4.52935 </td> <td align="right"> 498.267 </td> <td align="right"> 5000.26 </td> <td align="right"> 3112.54 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.02 </td> <td align="right"> 2162.57 </td> <td align="right"> 0.694794 </td> </tr>
+  <tr> <td align="right"> inIDGlucose </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 1.29105 </td> <td align="right"> 375.871 </td> <td align="right"> 5000.11 </td> <td align="right"> 3082.37 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.02 </td> <td align="right"> 2189.18 </td> <td align="right"> 0.710227 </td> </tr>
+  <tr> <td align="right"> glu_mix </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 5.96379 </td> <td align="right"> 452.413 </td> <td align="right"> 5000.29 </td> <td align="right">  3080.3 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2206.75 </td> <td align="right"> 0.716409 </td> </tr>
+  <tr> <td align="right"> gluHack </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 1.51409 </td> <td align="right"> 504.895 </td> <td align="right"> 5000.19 </td> <td align="right"> 3064.04 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2171.37 </td> <td align="right"> 0.708664 </td> </tr>
+  <tr> <td align="right"> Glucose_Hack_Kiel_fastBVE </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right">  2.1517 </td> <td align="right"> 683.839 </td> <td align="right"> 5000.67 </td> <td align="right"> 3334.09 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.02 </td> <td align="right"> 2098.77 </td> <td align="right"> 0.629486 </td> </tr>
+  <tr> <td align="right"> glucose.3.0_PADC_3 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 6.07533 </td> <td align="right"> 762.768 </td> <td align="right"> 5000.34 </td> <td align="right"> 3320.49 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.11 </td> <td align="right"> 2093.24 </td> <td align="right"> 0.630401 </td> </tr>
+  <tr> <td align="right"> glucose.3.0_PADC_10 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 6.07683 </td> <td align="right"> 639.892 </td> <td align="right"> 5000.39 </td> <td align="right"> 3258.42 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.08 </td> <td align="right"> 2109.88 </td> <td align="right"> 0.647515 </td> </tr>
+  <tr> <td align="right"> glucose4.2.1 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 1.56823 </td> <td align="right"> 431.539 </td> <td align="right"> 5000.24 </td> <td align="right"> 3121.44 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2168.45 </td> <td align="right"> 0.694696 </td> </tr>
+  <tr> <td align="right"> expMC_VSIDS_LRB_Switch_2500 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.733243 </td> <td align="right"> 827.828 </td> <td align="right"> 3355.09 </td> <td align="right"> 3058.98 </td> <td align="right"> 5000.55 </td> <td align="right"> 5001.01 </td> <td align="right"> 2029.96 </td> <td align="right"> 0.663607 </td> </tr>
+  <tr> <td align="right"> expMC_LRB_VSIDS_Switch_2500 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 1.05537 </td> <td align="right"> 282.667 </td> <td align="right"> 2596.21 </td> <td align="right"> 2714.94 </td> <td align="right">  5000.7 </td> <td align="right"> 5001.01 </td> <td align="right"> 2247.06 </td> <td align="right"> 0.827664 </td> </tr>
+  <tr> <td align="right"> expMC_LRB_VSIDS_Switch </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.616435 </td> <td align="right"> 266.861 </td> <td align="right"> 3013.88 </td> <td align="right"> 2764.51 </td> <td align="right"> 5000.62 </td> <td align="right"> 5001.01 </td> <td align="right"> 2257.93 </td> <td align="right"> 0.816755 </td> </tr>
+  <tr> <td align="right"> GHackCOMSPS_drup </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.22072 </td> <td align="right"> 385.013 </td> <td align="right"> 5000.14 </td> <td align="right"> 3030.76 </td> <td align="right"> 5000.74 </td> <td align="right"> 5001.01 </td> <td align="right"> 2203.11 </td> <td align="right"> 0.726915 </td> </tr>
+  <tr> <td align="right"> glucose3.0 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right">  6.6208 </td> <td align="right"> 744.573 </td> <td align="right"> 5000.56 </td> <td align="right"> 3367.83 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2094.24 </td> <td align="right"> 0.621839 </td> </tr>
+  <tr> <td align="right"> MapleCOMSPS_CHB_VSIDS_drup </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.647167 </td> <td align="right"> 433.445 </td> <td align="right"> 5000.11 </td> <td align="right"> 3022.82 </td> <td align="right"> 5000.68 </td> <td align="right"> 5001.01 </td> <td align="right"> 2219.74 </td> <td align="right"> 0.734326 </td> </tr>
+  <tr> <td align="right"> MapleCOMSPS_LRB_VSIDS_2_fix </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.563273 </td> <td align="right"> 245.528 </td> <td align="right"> 2889.25 </td> <td align="right"> 2759.01 </td> <td align="right">  5000.7 </td> <td align="right"> 5001.02 </td> <td align="right"> 2258.83 </td> <td align="right"> 0.81871 </td> </tr>
+  <tr> <td align="right"> MapleCOMSPS_LRB_VSIDS_drup </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.612203 </td> <td align="right">  334.58 </td> <td align="right"> 4798.02 </td> <td align="right"> 2850.02 </td> <td align="right">  5000.7 </td> <td align="right"> 5001.01 </td> <td align="right"> 2248.31 </td> <td align="right"> 0.788876 </td> </tr>
+  <tr> <td align="right"> Minisat.v2.2.0.106.ge2dd095 </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right">  1.9075 </td> <td align="right"> 875.121 </td> <td align="right"> 5000.53 </td> <td align="right"> 3294.99 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right"> 2079.09 </td> <td align="right"> 0.630986 </td> </tr>
+  <tr> <td align="right"> Riss7.1.fix </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.574338 </td> <td align="right"> 834.757 </td> <td align="right"> 5000.67 </td> <td align="right"> 3439.65 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.02 </td> <td align="right"> 2067.44 </td> <td align="right"> 0.601063 </td> </tr>
+  <tr> <td align="right"> Sparrow2Riss.2018.fixfix </td> <td align="right">     353 </td> <td align="right">       0 </td> <td align="right"> 0.645421 </td> <td align="right"> 782.342 </td> <td align="right"> 5000.68 </td> <td align="right">  3402.2 </td> <td align="right"> 5001.01 </td> <td align="right"> 5001.01 </td> <td align="right">  2076.1 </td> <td align="right"> 0.610222 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Summary of the runstatus per algorithm </h2>
+
+The following table summarizes the runstatus of each algorithm over all instances (in %).<br>
+<br>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:30:45 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> ok </th> <th> timeout </th> <th> memout </th> <th> not_applicable </th> <th> crash </th> <th> other </th>  </tr>
+  <tr> <td align="right"> abcdsat_r18 </td> <td align="right"> 49.858 </td> <td align="right"> 50.142 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> CaDiCaL </td> <td align="right"> 56.657 </td> <td align="right"> 43.343 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Candy </td> <td align="right"> 42.776 </td> <td align="right"> 57.224 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> cms55.main.all4fixed </td> <td align="right"> 56.657 </td> <td align="right"> 43.343 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> COMiniSatPS_Pulsar_drup </td> <td align="right"> 52.125 </td> <td align="right"> 47.875 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> expGlucose </td> <td align="right"> 46.742 </td> <td align="right"> 53.258 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> expMC_LRB_VSIDS_Switch </td> <td align="right"> 51.558 </td> <td align="right"> 48.442 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> expMC_LRB_VSIDS_Switch_2500 </td> <td align="right"> 53.258 </td> <td align="right"> 46.742 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> expMC_VSIDS_LRB_Switch_2500 </td> <td align="right"> 54.108 </td> <td align="right"> 45.892 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> GHackCOMSPS_drup </td> <td align="right"> 48.159 </td> <td align="right"> 51.841 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> glu_mix </td> <td align="right"> 47.592 </td> <td align="right"> 52.408 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Glucose_Hack_Kiel_fastBVE </td> <td align="right"> 41.926 </td> <td align="right"> 58.074 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> glucose.3.0_PADC_10 </td> <td align="right"> 43.909 </td> <td align="right"> 56.091 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> glucose.3.0_PADC_3 </td> <td align="right"> 42.776 </td> <td align="right"> 57.224 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> glucose3.0 </td> <td align="right"> 41.076 </td> <td align="right"> 58.924 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> glucose4.2.1 </td> <td align="right"> 46.176 </td> <td align="right"> 53.824 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> gluHack </td> <td align="right"> 48.159 </td> <td align="right"> 51.841 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> inIDGlucose </td> <td align="right"> 47.025 </td> <td align="right"> 52.975 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Lingeling </td> <td align="right"> 46.742 </td> <td align="right"> 53.258 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_CM </td> <td align="right"> 54.674 </td> <td align="right"> 45.326 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_CM_Dist </td> <td align="right"> 54.391 </td> <td align="right"> 45.609 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_CM_ordUIP </td> <td align="right"> 55.524 </td> <td align="right"> 44.476 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_CM_ordUIP. </td> <td align="right"> 54.958 </td> <td align="right"> 45.042 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_LCM_M1 </td> <td align="right"> 51.841 </td> <td align="right"> 48.159 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_LCM_Scavel_200_fix2 </td> <td align="right"> 54.391 </td> <td align="right"> 45.609 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_LCM_Scavel_fix2 </td> <td align="right"> 56.657 </td> <td align="right"> 43.343 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_LCM.BCrestart </td> <td align="right"> 52.691 </td> <td align="right"> 47.309 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Maple_LCM.BCrestart_M1 </td> <td align="right"> 52.975 </td> <td align="right"> 47.025 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> MapleCOMSPS_CHB_VSIDS_drup </td> <td align="right"> 47.309 </td> <td align="right"> 52.691 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> MapleCOMSPS_LRB_VSIDS_2_fix </td> <td align="right"> 51.275 </td> <td align="right"> 48.725 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> MapleCOMSPS_LRB_VSIDS_drup </td> <td align="right"> 50.708 </td> <td align="right"> 49.292 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> MapleLCMDistChronoBT </td> <td align="right"> 58.640 </td> <td align="right"> 41.360 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Minisat.v2.2.0.106.ge2dd095 </td> <td align="right"> 43.626 </td> <td align="right"> 56.374 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Riss7.1.fix </td> <td align="right"> 40.510 </td> <td align="right"> 59.490 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> smallsat </td> <td align="right"> 50.142 </td> <td align="right"> 49.858 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> Sparrow2Riss.2018.fixfix </td> <td align="right"> 40.793 </td> <td align="right"> 59.207 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> YalSAT </td> <td align="right"> 18.980 </td> <td align="right"> 81.020 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Dominated Algorithms </h2>
+
+Here, you'll find an overview of dominating/dominated algorithms: <br>
+
+None of the algorithms was superior to any of the other.
+
+<br> <br>
+An algorithm (A) is considered to be superior to an other algorithm (B), if it has at least an equal performance on all instances (compared to B) <u>and</u> if it is better on at least one of them. A missing value is automatically a worse performance. However, instances which could not be solved by either one of the algorithms, were not considered for the dominance relation.<br>
+
+<br>
+<br>
+
+<h1>Visualisations</h1>
+<b><FONT COLOR = "#FF0000"> Important note w.r.t. some of the following plots:</b><br>
+If appropriate, we imputed performance values for failed or censored runs.
+We used max + 0.3 * (max - min), in case of minimization problems,
+or min - 0.3 * (max - min), in case of maximization problems.<br>
+In addition, a small noise is added to the imputed values (except for the cluster matrix,
+based on correlations, which is shown at the end of this page). </FONT>
+<br>
+<br>
+
+<h2> Boxplots of performance values </h2>
+
+<br>Imputing the performance values of failed or censored runs (as described in the red note at the beginning of this section):<br>
+<div class="chunk" id="unnamed-chunk-4"><div class="rimage default"><img src="figure/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" class="plot" /></div></div>
+
+<br>Discarding the performance values of failed or censored runs:<br>
+<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="warning"><pre class="knitr r">## Warning: Removed 6681 rows containing non-finite values (stat_boxplot).
+</pre></div>
+</div><div class="rimage default"><img src="figure/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" class="plot" /></div></div>
+
+<br>
+<h2> Estimated densitities of performance values </h2>
+
+<br>Imputing the performance values of failed or censored runs (as described in the red note at the beginning of this section):<br>
+<div class="chunk" id="unnamed-chunk-6"><div class="rimage default"><img src="figure/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" class="plot" /></div></div>
+
+<br>Discarding the performance values of failed or censored runs:<br>
+<div class="chunk" id="unnamed-chunk-7"><div class="rimage default"><img src="figure/unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" class="plot" /></div></div>
+<br>
+
+<h2> Estimated cumulative distribution functions of performance values </h2>
+
+<br>Imputing the performance values of failed runs (as described in the red note at the beginning of this section):<br>
+<div class="chunk" id="unnamed-chunk-8"><div class="rimage default"><img src="figure/unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" class="plot" /></div></div>
+
+<br>Discarding the performance values of failed or censored runs:<br>
+<div class="chunk" id="unnamed-chunk-9"><div class="rimage default"><img src="figure/unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" class="plot" /></div></div>
+
+
+<br>
+<h2> Scatterplot matrix of the performance values </h2>
+The figure underneath shows pairwise scatterplots of the performance values.<br>
+
+<br>Imputing the performance values of failed and censored runs (as described in the red note at the beginning of this section):<br>
+
+</div><div class="rimage default"><img src="figure/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" class="plot" /></div><div class="rcode">
+
+
+
+<br>
+<h2> Clustering algorithms based on their correlations </h2>
+The following figure shows the correlations of the <b>ranks</b> of the performance
+values. Per default it will show the correlation coefficient of spearman. Missing values were imputed <u>prior</u> to computing the correlation coefficients. The algorithms are ordered in a way that similar (highly correlated) algorithms are close to each other. Per default the clustering is based on hierarchical clustering, using Ward's method. <br>
+<br>
+
+<div class="chunk" id="unnamed-chunk-11"><div class="rimage default"><img src="figure/unnamed-chunk-11-1.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" class="plot" /></div></div>
+
+
+</body>
+</html>

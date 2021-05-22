@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+  <title>Algorithm performance overview</title>
+</head>
+<body>
+
+
+<h2> Overview of performance values </h2>
+
+The following statistics were calculated from the performance values of each algorithm:
+<ul>
+
+  <li> <a>obs (number of observations within performance values)</a>
+  <li> <a>nas (number of NAs, i.e., missing values, within performance values)</a>
+  <li> <a>min (minimum), mean (arithmetic mean), max (maximum), sd (standard deviation)</a>
+  <li> <a>qu_1st (1st quartile = lower quartile = 25%-quantile)</a>
+  <li> <a>med (median = 50%-quantile)</a>
+  <li> <a>qu_3rd (3rd quartile = upper quartile = 75%-quantile)</a>
+  <li> <a>coeff_var (coefficient of variation = standard deviation / arithmetic mean)</a>
+
+</ul>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:27:55 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> obs </th> <th> nas </th> <th> min </th> <th> qu_1st </th> <th> med </th> <th> mean </th> <th> qu_3rd </th> <th> max </th> <th> sd </th> <th> coeff_var </th>  </tr>
+  <tr> <td align="right"> beans_and_eggs </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">  13.795 </td> <td align="right"> 246.216 </td> <td align="right"> 13732.5 </td> <td align="right">   50000 </td> <td align="right">   50000 </td> <td align="right"> 21963.2 </td> <td align="right"> 1.59936 </td> </tr>
+  <tr> <td align="right"> glucose_kiel </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">   9.912 </td> <td align="right">  143.93 </td> <td align="right"> 12464.9 </td> <td align="right"> 4365.97 </td> <td align="right">   50000 </td> <td align="right"> 21285.8 </td> <td align="right"> 1.70765 </td> </tr>
+  <tr> <td align="right"> maple_glucose </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">  16.705 </td> <td align="right"> 268.748 </td> <td align="right"> 12350.7 </td> <td align="right"> 3899.07 </td> <td align="right">   50000 </td> <td align="right"> 21038.4 </td> <td align="right"> 1.70342 </td> </tr>
+  <tr> <td align="right"> maplecms </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.004 </td> <td align="right">   21.75 </td> <td align="right"> 244.946 </td> <td align="right"> 12876.7 </td> <td align="right"> 16245.4 </td> <td align="right">   50000 </td> <td align="right"> 21454.3 </td> <td align="right"> 1.66613 </td> </tr>
+  <tr> <td align="right"> maplecomsps </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">  16.654 </td> <td align="right"> 210.084 </td> <td align="right"> 10213.3 </td> <td align="right">  2678.8 </td> <td align="right">   50000 </td> <td align="right"> 19576.9 </td> <td align="right"> 1.91681 </td> </tr>
+  <tr> <td align="right"> maplecomsps_lrb </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">  13.866 </td> <td align="right"> 127.674 </td> <td align="right"> 10126.8 </td> <td align="right"> 2154.78 </td> <td align="right">   50000 </td> <td align="right"> 19676.3 </td> <td align="right"> 1.94299 </td> </tr>
+  <tr> <td align="right"> scavel_sat </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">  20.532 </td> <td align="right"> 485.202 </td> <td align="right"> 16257.7 </td> <td align="right">   50000 </td> <td align="right">   50000 </td> <td align="right"> 23035.5 </td> <td align="right">  1.4169 </td> </tr>
+  <tr> <td align="right"> splatz </td> <td align="right">    2000 </td> <td align="right">       0 </td> <td align="right">   0.001 </td> <td align="right">  23.787 </td> <td align="right"> 273.456 </td> <td align="right"> 15632.8 </td> <td align="right">   50000 </td> <td align="right">   50000 </td> <td align="right"> 22865.1 </td> <td align="right"> 1.46264 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Summary of the runstatus per algorithm </h2>
+
+The following table summarizes the runstatus of each algorithm over all instances (in %).<br>
+<br>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:27:55 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> ok </th> <th> timeout </th> <th> memout </th> <th> not_applicable </th> <th> crash </th> <th> other </th>  </tr>
+  <tr> <td align="right"> beans_and_eggs </td> <td align="right"> 73.200 </td> <td align="right"> 26.450 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.350 </td> </tr>
+  <tr> <td align="right"> cominisatps </td> <td align="right"> 78.100 </td> <td align="right"> 21.500 </td> <td align="right"> 0.050 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.350 </td> </tr>
+  <tr> <td align="right"> glucose_kiel </td> <td align="right"> 75.700 </td> <td align="right"> 24.050 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.250 </td> </tr>
+  <tr> <td align="right"> maple_glucose </td> <td align="right"> 76.250 </td> <td align="right"> 23.750 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> maplecms </td> <td align="right"> 75.000 </td> <td align="right"> 21.650 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 3.250 </td> <td align="right"> 0.100 </td> </tr>
+  <tr> <td align="right"> maplecomsps </td> <td align="right"> 80.550 </td> <td align="right"> 19.450 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> </tr>
+  <tr> <td align="right"> maplecomsps_lrb </td> <td align="right"> 80.450 </td> <td align="right"> 19.500 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.050 </td> </tr>
+  <tr> <td align="right"> riss5 </td> <td align="right"> 76.300 </td> <td align="right"> 23.300 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.400 </td> </tr>
+  <tr> <td align="right"> scavel_sat </td> <td align="right"> 68.250 </td> <td align="right"> 31.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 0.500 </td> <td align="right"> 0.250 </td> </tr>
+  <tr> <td align="right"> splatz </td> <td align="right"> 69.350 </td> <td align="right"> 27.050 </td> <td align="right"> 0.000 </td> <td align="right"> 0.000 </td> <td align="right"> 3.550 </td> <td align="right"> 0.050 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Dominated Algorithms </h2>
+
+Here, you'll find an overview of dominating/dominated algorithms: <br>
+
+None of the algorithms was superior to any of the other.
+
+<br> <br>
+An algorithm (A) is considered to be superior to an other algorithm (B), if it has at least an equal performance on all instances (compared to B) <u>and</u> if it is better on at least one of them. A missing value is automatically a worse performance. However, instances which could not be solved by either one of the algorithms, were not considered for the dominance relation.<br>
+
+<br>
+<br>
+
+<h1>Visualisations</h1>
+<b><FONT COLOR = "#FF0000"> Important note w.r.t. some of the following plots:</b><br>
+If appropriate, we imputed performance values for failed or censored runs.
+We used max + 0.3 * (max - min), in case of minimization problems,
+or min - 0.3 * (max - min), in case of maximization problems.<br>
+In addition, a small noise is added to the imputed values (except for the cluster matrix,
+based on correlations, which is shown at the end of this page). </FONT>
+<br>
+<br>
+
+<h2> Boxplots of performance values </h2>
+
+<br>Imputing the performance values of failed or censored runs (as described in the red note at the beginning of this section):<br>
+<div class="chunk" id="unnamed-chunk-4"><div class="rimage default"><img src="figure/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" class="plot" /></div></div>
+
+<br>Discarding the performance values of failed or censored runs:<br>
+<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="warning"><pre class="knitr r">## Warning: Removed 4937 rows containing non-finite values (stat_boxplot).
+</pre></div>
+</div><div class="rimage default"><img src="figure/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" class="plot" /></div></div>
+
+<br>
+<h2> Estimated densitities of performance values </h2>
+
+<br>Imputing the performance values of failed or censored runs (as described in the red note at the beginning of this section):<br>
+<div class="chunk" id="unnamed-chunk-6"><div class="rimage default"><img src="figure/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" class="plot" /></div></div>
+
+<br>Discarding the performance values of failed or censored runs:<br>
+<div class="chunk" id="unnamed-chunk-7"><div class="rimage default"><img src="figure/unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" class="plot" /></div></div>
+<br>
+
+<h2> Estimated cumulative distribution functions of performance values </h2>
+
+<br>Imputing the performance values of failed runs (as described in the red note at the beginning of this section):<br>
+<div class="chunk" id="unnamed-chunk-8"><div class="rimage default"><img src="figure/unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" class="plot" /></div></div>
+
+<br>Discarding the performance values of failed or censored runs:<br>
+<div class="chunk" id="unnamed-chunk-9"><div class="rimage default"><img src="figure/unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" class="plot" /></div></div>
+
+
+<br>
+<h2> Scatterplot matrix of the performance values </h2>
+The figure underneath shows pairwise scatterplots of the performance values.<br>
+
+<br>Imputing the performance values of failed and censored runs (as described in the red note at the beginning of this section):<br>
+
+</div><div class="rimage default"><img src="figure/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" class="plot" /></div><div class="rcode">
+
+
+
+<br>
+<h2> Clustering algorithms based on their correlations </h2>
+The following figure shows the correlations of the <b>ranks</b> of the performance
+values. Per default it will show the correlation coefficient of spearman. Missing values were imputed <u>prior</u> to computing the correlation coefficients. The algorithms are ordered in a way that similar (highly correlated) algorithms are close to each other. Per default the clustering is based on hierarchical clustering, using Ward's method. <br>
+<br>
+
+<div class="chunk" id="unnamed-chunk-11"><div class="rimage default"><img src="figure/unnamed-chunk-11-1.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" class="plot" /></div></div>
+
+
+</body>
+</html>

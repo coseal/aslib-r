@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:55:36 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:25:43 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.925 </td> <td> 1383.196 </td> <td>  0.000 </td> </tr>
@@ -105,11 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.880</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">2231.818</FONT></b> </td> <td> 120.835 </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.880</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">2231.818</FONT></b> </td> <td> 120.835 </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td>  0.894 </td> <td> 1960.712 </td> <td> 64.854 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.899</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1868.820</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">53.828</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.899</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1865.736</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">50.750</FONT></b> </td> </tr>
-  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.895</FONT></b> </td> <td> 1945.607 </td> <td> 76.698 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1805.768</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">44.686</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.900</FONT></b> </td> <td> 1839.721 </td> <td> <b><FONT COLOR="#FFAAAA">51.680</FONT></b> </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#FF0000"> 0.905</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">1771.350</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">64.180</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> lm </td> <td>  0.895 </td> <td> 1945.607 </td> <td> 76.698 </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td>  0.887 </td> <td> 2083.447 </td> <td> 79.787 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.903</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">1781.136</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">47.002</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1816.559</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">55.495</FONT></b> </td> </tr>
    </table>
 
 
@@ -122,21 +123,23 @@ The following default feature steps were used for model building:
 <p>
 Number of presolved instances: <code class="knitr inline">0</code>
 <p>
-The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">362.3</code>
-or on average: <code class="knitr inline">0.6028286</code>
+The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
+or on average: <code class="knitr inline">0</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">37</code> / <code class="knitr inline">37</code> features:
+The feature steps correspond to the following <code class="knitr inline">37</code> / <code class="knitr inline">37</code> instance features:
 <p>
 f_1, f_2, f_3, f_4, f_5, <br>f_6, f_7, f_8, f_9, f_10, <br>f_11, f_12, f_13, f_14, f_15, <br>f_16, f_17, f_18, f_19, f_20, <br>f_21, f_22, f_23, f_24, f_25, <br>f_26, f_27, f_28, f_29, f_30, <br>f_31, f_32, f_33, f_34, f_35, <br>f_36, f_37
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from   to , resulting in a PAR10 score of  for the reduced model. Analogously, the model that was generated based on  of the originally  features resulted in a PAR10 score of .
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">19</code> to <code class="knitr inline">4</code>, resulting in a PAR10 score of <code class="knitr inline">1638.493</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">4</code> of the originally <code class="knitr inline">29</code> features resulted in a PAR10 score of <code class="knitr inline">1646.627</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br><br><br>Selected Solvers:<br>
+Selected Features:<br>f_1, f_9, f_10, f_30<br><br>Selected Solvers:<br>Open.WBO16, WMaxSatz., WPM3.2015.co, maxhs.b
 <p>
 
 

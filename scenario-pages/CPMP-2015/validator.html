@@ -2,7 +2,7 @@
 
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -70,30 +70,15 @@
 
 <h1>Output of data validator</h1>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="output"><pre class="knitr r">## % [WARNING]: Not found: CPMP-2015/ground_truth.arff (maybe you want to add it)
-## % [WARNING]: Not found: CPMP-2015/feature_costs.arff (maybe you want to add it)
-## % [WARNING]: Have not found algorithm_cutoff_memory
-## % [WARNING]: Have not found features_stochastic
-## % [WARNING]: Have not found algortihms_deterministics
-## % [WARNING]: Have not found algorithms_stochastic
-## % Read CPMP-2015/description.txt
-## % Read CPMP-2015/algorithm_runs.arff
-## % Read CPMP-2015/feature_values.arff
-## % Read CPMP-2015/feature_runstatus.arff
-## % Read /home/larsko/work/coseal/aslib_data/CPMP-2015/cv.arff
-## % 1-th repetition: 53,53,53,53,53,53,52,52,53,52 distribution
-## % Used Feature Steps (3): lfa1,lfa2,orig
-## % Remove features: 
-## % 
-## % Used features (22): avg-l1-top-left-lg-group,top-good-min,container-density,group-same-min,empty-stack-pct,tier-weighted-groups,pct-bottom-pct-on-top,group-same-max,overstowing-2cont-stack-pct,cont-empty-grt-estack,bflb,overstowage-pct,group-same-stdev,tiers,top-good-mean,group-same-mean,stack-tier-ratio,top-good-max,overstowing-stack-pct,left-density,top-good-stdev,stacks
-## % 
-## % Check Consistency and Completeness of input data
-## % Instances: 			 527
-## % Incomplete Feature Vector: 	 0
-## % Unsolvable Instances (status): 	 0
-## % Valid Instances: 			 527
-## % Presolved: 			 0
-## % Average Feature Costs on all features: 	 0.0000
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in file.path(aslib.validator.dir, &quot;data_check_tool_python/src/main.py&quot;): object 'aslib.validator.dir' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in eval(expr, envir, enclos): object 'fn.main' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): cannot coerce type 'closure' to vector of type 'character'
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in shortenPathsInValidator(s, scenario.dir): object 's' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): object 's' not found
 </pre></div>
 
 </div></div>

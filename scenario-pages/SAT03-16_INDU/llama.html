@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,20 +96,21 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 14:01:08 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:27:53 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.863 </td> <td> 7137.571 </td> <td> 10.836 </td> </tr>
   <tr> <td> baseline </td> <td> singleBest </td> <td>  0.804 </td> <td> <b><FONT COLOR="#00FF00">10126.835</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">390.100</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td>  0.804 </td> <td> <b><FONT COLOR="#00FF00">10126.835</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">390.100</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.805</FONT></b> </td> <td> 10213.286 </td> <td> 521.551 </td> </tr>
-  <tr> <td> classif </td> <td> rpart </td> <td>  0.814 </td> <td> 9693.348 </td> <td> 314.755 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.815</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">9584.540</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">269.383</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td>  0.813 </td> <td> 9707.015 </td> <td> 301.660 </td> </tr>
+  <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#FFAAAA"> 0.814</FONT></b> </td> <td> 9693.348 </td> <td> 314.755 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.814</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">9661.883</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">279.970</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td>  0.812 </td> <td> 9728.371 </td> <td> 300.952 </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.804</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">10185.511</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">381.364</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.822</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">9278.063</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">278.841</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td>  0.806 </td> <td> 10107.674 </td> <td> 391.658 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.826</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">9039.092</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">218.901</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.825</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">9092.107</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">226.589</FONT></b> </td> </tr>
    </table>
 
 
@@ -120,23 +121,25 @@ The following default feature steps were used for model building:
 <p>
 <code class="knitr inline">base, tud_base</code>
 <p>
-Number of presolved instances: <code class="knitr inline">33</code>
+Number of presolved instances: <code class="knitr inline">0</code>
 <p>
-The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">3.3865468 &times; 10<sup>5</sup></code>
-or on average: <code class="knitr inline">169.327341</code>
+The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
+or on average: <code class="knitr inline">0</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">142</code> / <code class="knitr inline">483</code> features:
+The feature steps correspond to the following <code class="knitr inline">142</code> / <code class="knitr inline">483</code> instance features:
 <p>
 nvarsOrig, nclausesOrig, nvars, nclauses, reducedVars, <br>reducedClauses, vars.clauses.ratio, POSNEG.RATIO.CLAUSE.mean, POSNEG.RATIO.CLAUSE.coeff.variation, POSNEG.RATIO.CLAUSE.min, <br>POSNEG.RATIO.CLAUSE.max, POSNEG.RATIO.CLAUSE.entropy, VCG.CLAUSE.mean, VCG.CLAUSE.coeff.variation, VCG.CLAUSE.min, <br>VCG.CLAUSE.max, VCG.CLAUSE.entropy, UNARY, BINARYp, TRINARYp, <br>VCG.VAR.mean, VCG.VAR.coeff.variation, VCG.VAR.min, VCG.VAR.max, VCG.VAR.entropy, <br>POSNEG.RATIO.VAR.mean, POSNEG.RATIO.VAR.stdev, POSNEG.RATIO.VAR.min, POSNEG.RATIO.VAR.max, POSNEG.RATIO.VAR.entropy, <br>HORNY.VAR.mean, HORNY.VAR.coeff.variation, HORNY.VAR.min, HORNY.VAR.max, HORNY.VAR.entropy, <br>horn.clauses.fraction, VG.mean, VG.coeff.variation, VG.min, VG.max, <br>CG.mean, CG.coeff.variation, CG.min, CG.max, CG.entropy, <br>cluster.coeff.mean, cluster.coeff.coeff.variation, cluster.coeff.min, cluster.coeff.max, cluster.coeff.entropy, <br>tud_clauses, tud_vars, tud_clauses_size_1, tud_clauses_size_2, tud_clauses_size_3, <br>tud_clauses_size_4, tud_clauses_size_5, tud_clauses_size_6, tud_clauses_size_7, tud_clauses_size_8, <br>tud_clauses_size_.._9, tud_horn_clauses, tud_clause.variable_degree_min, tud_clause.variable_degree_max, tud_clause.variable_degree_mode, <br>tud_clause.variable_degree_mean, tud_clause.variable_degree_stdev, tud_clause.variable_degree_entropy, tud_clause.variable_degree_valuesRate, tud_clause.variable_degree_Q1, <br>tud_clause.variable_degree_Q2, tud_clause.variable_degree_Q3, tud_variable.clause_degree_zcount, tud_variable.clause_degree_min, tud_variable.clause_degree_max, <br>tud_variable.clause_degree_mode, tud_variable.clause_degree_mean, tud_variable.clause_degree_stdev, tud_variable.clause_degree_entropy, tud_variable.clause_degree_valuesRate, <br>tud_variable.clause_degree_Q1, tud_variable.clause_degree_Q2, tud_variable.clause_degree_Q3, tud_clause.variable_polarity_min, tud_clause.variable_polarity_max, <br>tud_clause.variable_polarity_mode, tud_clause.variable_polarity_mean, tud_clause.variable_polarity_stdev, tud_clause.variable_polarity_entropy, tud_clause.variable_polarity_valuesRate, <br>tud_clause.variable_polarity_Q1, tud_clause.variable_polarity_Q2, tud_clause.variable_polarity_Q3, tud_variable.clause_polarity_zcount, tud_variable.clause_polarity_min, <br>tud_variable.clause_polarity_max, tud_variable.clause_polarity_mode, tud_variable.clause_polarity_mean, tud_variable.clause_polarity_stdev, tud_variable.clause_polarity_entropy, <br>tud_variable.clause_polarity_valuesRate, tud_variable.clause_polarity_Q1, tud_variable.clause_polarity_Q2, tud_variable.clause_polarity_Q3, tud_Clause.Var_steps, <br>tud_SymmTime0_zcount, tud_SymmTime0_min, tud_SymmTime0_max, tud_SymmTime0_mode, tud_SymmTime0_mean, <br>tud_SymmTime0_stdev, tud_SymmTime0_entropy, tud_SymmTime0_valuesRate, tud_SymmTime0_Q1, tud_SymmTime0_Q2, <br>tud_SymmTime0_Q3, tud_Symmetry0_steps, tud_SymmTime1_zcount, tud_SymmTime1_min, tud_SymmTime1_max, <br>tud_SymmTime1_mode, tud_SymmTime1_mean, tud_SymmTime1_stdev, tud_SymmTime1_entropy, tud_SymmTime1_valuesRate, <br>tud_SymmTime1_Q1, tud_SymmTime1_Q2, tud_SymmTime1_Q3, tud_Symmetry1_steps, tud_SymmTime2_zcount, <br>tud_SymmTime2_min, tud_SymmTime2_max, tud_SymmTime2_mode, tud_SymmTime2_mean, tud_SymmTime2_stdev, <br>tud_SymmTime2_entropy, tud_SymmTime2_valuesRate, tud_SymmTime2_Q1, tud_SymmTime2_Q2, tud_SymmTime2_Q3, <br>tud_Symmetry2_steps, tud_Symmetry_computation_steps
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from   to , resulting in a PAR10 score of  for the reduced model. Analogously, the model that was generated based on  of the originally  features resulted in a PAR10 score of .
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">10</code> to <code class="knitr inline">6</code>, resulting in a PAR10 score of <code class="knitr inline">8800.582</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">477</code> features resulted in a PAR10 score of <code class="knitr inline">8549.498</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br><br><br>Selected Solvers:<br>
+Selected Features:<br>tud_resolution_graph_weights_Q1, tud_variable.clause_polarity_derivative_min, tud_RWH.1_mode<br><br>Selected Solvers:<br>maplecms, maplecomsps, maplecomsps_lrb, maple_glucose, riss5, <br>splatz
 <p>
 
 

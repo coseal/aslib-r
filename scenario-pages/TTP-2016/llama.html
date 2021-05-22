@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 14:08:42 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:32:52 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  1.000 </td> <td>  1.000 </td> <td>  0.000 </td> </tr>
@@ -105,11 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FF0000"> 0.065</FONT></b> </td> <td>  0.935 </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FF0000"> 0.065</FONT></b> </td> <td>  0.935 </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#FFAAAA"> 0.999</FONT></b> </td> <td>  1.001 </td> <td> <b><FONT COLOR="#FFAAAA"> 0.012</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.999</FONT></b> </td> <td>  1.002 </td> <td> <b><FONT COLOR="#FF0000"> 0.010</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.999</FONT></b> </td> <td>  1.002 </td> <td> <b><FONT COLOR="#FF0000"> 0.010</FONT></b> </td> </tr>
   <tr> <td> classif </td> <td> ksvm </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA"> 0.959</FONT></b> </td> <td>  0.041 </td> </tr>
-  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.999</FONT></b> </td> <td>  0.987 </td> <td>  0.028 </td> </tr>
-  <tr> <td> regr </td> <td> rpart </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#00FF00"> 0.980</FONT></b> </td> <td>  0.020 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td>  0.989 </td> <td> <b><FONT COLOR="#FFAAAA"> 0.011</FONT></b> </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#00FF00"> 0.982</FONT></b> </td> <td> <b><FONT COLOR="#00FF00"> 0.018</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> lm </td> <td>  0.999 </td> <td>  0.987 </td> <td>  0.028 </td> </tr>
+  <tr> <td> regr </td> <td> rpart </td> <td> <b><FONT COLOR="#00FF00"> 1.000</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA"> 0.980</FONT></b> </td> <td>  0.020 </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 1.000</FONT></b> </td> <td>  0.991 </td> <td> <b><FONT COLOR="#FFAAAA"> 0.011</FONT></b> </td> </tr>
    </table>
 
 
@@ -125,18 +126,20 @@ Number of presolved instances: <code class="knitr inline">0</code>
 The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
 or on average: <code class="knitr inline">NA</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">55</code> / <code class="knitr inline">55</code> features:
+The feature steps correspond to the following <code class="knitr inline">55</code> / <code class="knitr inline">55</code> instance features:
 <p>
 CAPACITYOFKNAPSACK, DIMENSION, KNAPSACKDATATYPE, NUMBEROFITEMS, ITEMSPERCITY, <br>RENTINGRATIO, MAXSPEED, MINSPEED, angle_min, angle_mean, <br>angle_median, angle_max, angle_sd, centroid_centroid_x, centroid_centroid_y, <br>centroid_min_distance_to_centroid, centroid_mean_distance_to_centroid, centroid_max_distance_to_centroid, cluster_01pct_number_of_clusters, cluster_01pct_mean_distance_to_centroid, <br>cluster_05pct_number_of_clusters, cluster_05pct_mean_distance_to_centroid, cluster_10pct_number_of_clusters, cluster_10pct_mean_distance_to_centroid, chull_area, <br>chull_points_on_hull, distance_min, distance_mean, distance_median, distance_max, <br>distance_sd, distance_distances_shorter_mean_distance, distance_distinct_distances, distance_mode_frequency, distance_mode_quantity, <br>distance_mode_mean, distance_mean_tour_length, modes_number, mst_depth_min, mst_depth_mean, <br>mst_depth_median, mst_depth_max, mst_depth_sd, mst_dists_min, mst_dists_mean, <br>mst_dists_median, mst_dists_max, mst_dists_sd, mst_dists_sum, nnds_min, <br>nnds_mean, nnds_median, nnds_max, nnds_sd, nnds_varcoef<br>
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from   to , resulting in a PAR10 score of  for the reduced model. Analogously, the model that was generated based on  of the originally  features resulted in a PAR10 score of .
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">21</code> to <code class="knitr inline">1</code>, resulting in a PAR10 score of <code class="knitr inline">0.065</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">1</code> of the originally <code class="knitr inline">52</code> features resulted in a PAR10 score of <code class="knitr inline">0.959</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br><br><br>Selected Solvers:<br>
+Selected Features:<br>KNAPSACKDATATYPE<br><br>Selected Solvers:<br>SH
 <p>
 
 

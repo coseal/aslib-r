@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:53:29 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:24:38 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.875 </td> <td> 6344.251 </td> <td>  0.000 </td> </tr>
@@ -105,11 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.858</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">7201.556</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">79.143</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.858</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">7201.556</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">79.143</FONT></b> </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#FF0000"> 0.872</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">6488.162</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">10.512</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.869</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">6629.104</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">18.055</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td>  0.868 </td> <td> 6679.937 </td> <td> 24.421 </td> </tr>
-  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.869</FONT></b> </td> <td> 6633.481 </td> <td> 22.431 </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td>  0.868 </td> <td> 6677.876 </td> <td> <b><FONT COLOR="#FFAAAA">22.360</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td>  0.867 </td> <td> 6727.606 </td> <td> 27.624 </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.862</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">7005.380</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">60.833</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.869</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">6633.481</FONT></b> </td> <td> 22.431 </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td>  0.863 </td> <td> 6952.248 </td> <td> 52.167 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.872</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">6515.330</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">15.446</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.871</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">6540.345</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">18.228</FONT></b> </td> </tr>
    </table>
 
 
@@ -125,18 +126,20 @@ Number of presolved instances: <code class="knitr inline">0</code>
 The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
 or on average: <code class="knitr inline">NA</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">86</code> / <code class="knitr inline">86</code> features:
+The feature steps correspond to the following <code class="knitr inline">86</code> / <code class="knitr inline">86</code> instance features:
 <p>
 stats_varcount, stats_var_bool, stats_var_discrete, stats_var_bound, stats_var_sparsebound, <br>stats_dom_0, stats_dom_25, stats_dom_50, stats_dom_75, stats_dom_100, <br>stats_dom_mean, stats_dom_not2_2_ratio, stats_discrete_bool_ratio, stats_branchingvars, stats_auxvars, <br>stats_auxvar_branching_ratio, stats_conscount, stats_arity_0, stats_arity_25, stats_arity_50, <br>stats_arity_75, stats_arity_100, stats_arity_mean, stats_arity_mean_normalised, stats_cts_per_var_mean, <br>stats_cts_per_var_mean_normalised, stats_alldiff_count, stats_alldiff_proportion, stats_sums_count, stats_sums_proportion, <br>stats_or_atleastk_count, stats_or_atleastk_proportion, stats_ternary_count, stats_ternary_proportion, stats_binary_count, <br>stats_binary_proportion, stats_reify_count, stats_reify_proportion, stats_table_count, stats_table_proportion, <br>stats_lex_count, stats_lex_proportion, stats_unary_count, stats_unary_proportion, stats_nullary_count, <br>stats_nullary_proportion, stats_element_count, stats_element_proportion, stats_minmax_count, stats_minmax_proportion, <br>stats_occurrence_count, stats_occurrence_proportion, stats_multi_shared_vars, stats_edge_density, stats_Local_Variance, <br>standard_deviation_of_node_degree, normalised_standard_deviation_of_node_degree, clustering_coefficient, minimum_degree, normalised_minimum_degree, <br>maximum_degree, normalised_maximum_degree, median_degree, normalised_median_degree, mean_degree, <br>normalised_mean_degree, width_of_ordering, normalised_width_of_ordering, width_of_graph, normalised_width_of_graph, <br>SAC_literals, normalised_SAC_literals, stats_tightness_0, stats_tightness_25, stats_tightness_50, <br>stats_tightness_75, stats_tightness_100, stats_tightness_mean, stats_tightness_mean_normalised, stats_literal_tightness_0, <br>stats_literal_tightness_25, stats_literal_tightness_50, stats_literal_tightness_75, stats_literal_tightness_100, stats_literal_tightness_mean, <br>stats_literal_tightness_coeff_of_variation
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">2</code> to <code class="knitr inline">2</code>, resulting in a PAR10 score of <code class="knitr inline">6516.567</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">69</code> features resulted in a PAR10 score of <code class="knitr inline">6415.231</code>.
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">2</code> to <code class="knitr inline">2</code>, resulting in a PAR10 score of <code class="knitr inline">6516.464</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">69</code> features resulted in a PAR10 score of <code class="knitr inline">6415.798</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br>stats_arity_25, minimum_degree, normalised_maximum_degree<br><br>Selected Solvers:<br>standard, learning
+Selected Features:<br>stats_arity_50, stats_table_proportion, normalised_maximum_degree<br><br>Selected Solvers:<br>learning, standard
 <p>
 
 

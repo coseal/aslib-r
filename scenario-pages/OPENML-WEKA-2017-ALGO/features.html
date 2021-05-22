@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+  <title>Feature performance overview</title>
+</head>
+<body>
+
+
+<h2> Overview of Feature Values</h2>
+
+The following measures were taken for the results of each feature:
+<ul>
+
+  <li> <a>obs (number of observations within the feature set)</a>
+  <li> <a>NAs (number of NAs, i.e., missing values, within the feature set)</a>
+  <li> <a>min (minimum), mean (arithmetic mean), max (maximum), std_dev (standard deviation)</a>
+  <li> <a>1st_qu (1st quartile = lower quartile = 25%-quantile)</a>
+  <li> <a>median (median = 50%-quantile)</a>
+  <li> <a>3rd_qu (3rd quartile = upper quartile = 75%-quantile)</a>
+  <li> <a>co_var (coefficient of variation = standard deviation / arithmetic mean)</a>
+
+</ul>
+
+<h3> Instance Feature Values</h3>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:32 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> obs </th> <th> nas </th> <th> min </th> <th> qu_1st </th> <th> med </th> <th> mean </th> <th> qu_3rd </th> <th> max </th> <th> sd </th> <th> coeff_var </th>  </tr>
+  <tr> <td align="right"> MeanAttributeEntropy </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right"> -0.021 </td> <td align="right"> 1.2 </td> <td align="right"> 4.9 </td> <td align="right"> 1.5 </td> <td align="right"> -70 </td> </tr>
+  <tr> <td align="right"> NaiveBayesAdwin.warnings </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> NoiseToSignalRatio </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">  -1 </td> <td align="right"> 5.8 </td> <td align="right">  22 </td> <td align="right">  94 </td> <td align="right">  65 </td> <td align="right"> 1.1e+03 </td> <td align="right"> 2.1e+02 </td> <td align="right"> 2.2 </td> </tr>
+  <tr> <td align="right"> NumberOfNumericFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   7 </td> <td align="right">  21 </td> <td align="right"> 1.3e+03 </td> <td align="right">  72 </td> <td align="right"> 1.1e+04 </td> <td align="right"> 3.4e+03 </td> <td align="right"> 2.6 </td> </tr>
+  <tr> <td align="right"> NumberOfBinaryFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">   2 </td> <td align="right">   1 </td> <td align="right">  35 </td> <td align="right"> 4.8 </td> <td align="right"> 2.4 </td> </tr>
+  <tr> <td align="right"> DecisionStumpKappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.00017 </td> <td align="right">   0 </td> <td align="right"> 0.13 </td> <td align="right"> 0.27 </td> <td align="right"> 0.45 </td> <td align="right"> 0.92 </td> <td align="right"> 0.29 </td> <td align="right"> 1.1 </td> </tr>
+  <tr> <td align="right"> Quartile3SkewnessOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.0012 </td> <td align="right"> 0.78 </td> <td align="right"> 2.2 </td> <td align="right"> 4.3 </td> <td align="right"> 4.1 </td> <td align="right"> 1.2e+02 </td> <td align="right">  12 </td> <td align="right"> 2.8 </td> </tr>
+  <tr> <td align="right"> NumberOfMissingValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 1.1e+03 </td> <td align="right">   0 </td> <td align="right"> 6.8e+04 </td> <td align="right"> 7e+03 </td> <td align="right"> 6.6 </td> </tr>
+  <tr> <td align="right"> J48.001.ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.057 </td> <td align="right"> 0.15 </td> <td align="right"> 0.2 </td> <td align="right"> 0.28 </td> <td align="right"> 0.81 </td> <td align="right"> 0.19 </td> <td align="right"> 0.98 </td> </tr>
+  <tr> <td align="right"> HoeffdingAdwin.changes </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 5.8 </td> <td align="right">   4 </td> <td align="right">  67 </td> <td align="right">  13 </td> <td align="right"> 2.3 </td> </tr>
+  <tr> <td align="right"> PercentageOfNumericFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  77 </td> <td align="right">  95 </td> <td align="right">  77 </td> <td align="right">  98 </td> <td align="right"> 1e+02 </td> <td align="right">  33 </td> <td align="right"> 0.43 </td> </tr>
+  <tr> <td align="right"> MeanSkewnessOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.12 </td> <td align="right"> 0.27 </td> <td align="right">   2 </td> <td align="right"> 3.4 </td> <td align="right"> 3.5 </td> <td align="right">  72 </td> <td align="right"> 7.5 </td> <td align="right"> 2.2 </td> </tr>
+  <tr> <td align="right"> MinStdDevOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.0027 </td> <td align="right">  30 </td> <td align="right"> 0.24 </td> <td align="right"> 4.8e+02 </td> <td align="right"> 1.1e+02 </td> <td align="right"> 3.7 </td> </tr>
+  <tr> <td align="right"> NaiveBayesErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.091 </td> <td align="right"> 0.2 </td> <td align="right"> 0.25 </td> <td align="right"> 0.33 </td> <td align="right"> 0.83 </td> <td align="right"> 0.2 </td> <td align="right"> 0.81 </td> </tr>
+  <tr> <td align="right"> MinMutualInformation </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right"> 9.8e-06 </td> <td align="right"> 0.0025 </td> <td align="right"> 0.18 </td> <td align="right"> 0.0082 </td> <td align="right"> 4.2 </td> <td align="right"> 0.71 </td> <td align="right">   4 </td> </tr>
+  <tr> <td align="right"> MajorityClassPercentage </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">  19 </td> <td align="right">  54 </td> <td align="right">  49 </td> <td align="right">  75 </td> <td align="right">  95 </td> <td align="right">  29 </td> <td align="right"> 0.59 </td> </tr>
+  <tr> <td align="right"> NumberOfSymbolicFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right"> 7.3 </td> <td align="right">   4 </td> <td align="right"> 2.4e+02 </td> <td align="right">  25 </td> <td align="right"> 3.4 </td> </tr>
+  <tr> <td align="right"> J48.00001.ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.057 </td> <td align="right"> 0.16 </td> <td align="right"> 0.2 </td> <td align="right"> 0.28 </td> <td align="right"> 0.81 </td> <td align="right"> 0.2 </td> <td align="right"> 0.98 </td> </tr>
+  <tr> <td align="right"> MaxNominalAttDistinctValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right">  15 </td> <td align="right">   4 </td> <td align="right"> 1.1e+03 </td> <td align="right"> 1.1e+02 </td> <td align="right"> 7.1 </td> </tr>
+  <tr> <td align="right"> PercentageOfMissingValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 1.7 </td> <td align="right">   0 </td> <td align="right">  70 </td> <td align="right"> 9.3 </td> <td align="right"> 5.5 </td> </tr>
+  <tr> <td align="right"> MinKurtosisOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -2 </td> <td align="right"> -1.8 </td> <td align="right"> -1.5 </td> <td align="right">  18 </td> <td align="right"> -0.75 </td> <td align="right"> 2.1e+03 </td> <td align="right"> 2e+02 </td> <td align="right">  11 </td> </tr>
+  <tr> <td align="right"> MaxKurtosisOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -1.2 </td> <td align="right"> 8.4 </td> <td align="right"> 4.5e+02 </td> <td align="right"> 4.5e+03 </td> <td align="right"> 2.8e+03 </td> <td align="right"> 1.9e+05 </td> <td align="right"> 1.9e+04 </td> <td align="right"> 4.3 </td> </tr>
+  <tr> <td align="right"> EquivalentNumberOfAtts </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">  -1 </td> <td align="right"> 7.5 </td> <td align="right">  19 </td> <td align="right">  85 </td> <td align="right">  60 </td> <td align="right"> 5.3e+02 </td> <td align="right"> 1.4e+02 </td> <td align="right"> 1.7 </td> </tr>
+  <tr> <td align="right"> DecisionStumpErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.027 </td> <td align="right"> 0.14 </td> <td align="right"> 0.3 </td> <td align="right"> 0.4 </td> <td align="right"> 0.71 </td> <td align="right"> 0.98 </td> <td align="right"> 0.29 </td> <td align="right"> 0.73 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth3ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.11 </td> <td align="right"> 0.22 </td> <td align="right"> 0.28 </td> <td align="right"> 0.39 </td> <td align="right"> 0.93 </td> <td align="right"> 0.27 </td> <td align="right"> 0.95 </td> </tr>
+  <tr> <td align="right"> MaxStdDevOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 3.7 </td> <td align="right"> 1.6e+03 </td> <td align="right"> 2.1e+06 </td> <td align="right"> 6.1e+04 </td> <td align="right"> 2.1e+07 </td> <td align="right"> 6.2e+06 </td> <td align="right"> 2.9 </td> </tr>
+  <tr> <td align="right"> NaiveBayesAdwin.changes </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 5.8 </td> <td align="right">   5 </td> <td align="right">  88 </td> <td align="right">  14 </td> <td align="right"> 2.4 </td> </tr>
+  <tr> <td align="right"> Quartile3AttributeEntropy </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right"> 0.24 </td> <td align="right"> 1.4 </td> <td align="right"> 1.8 </td> <td align="right"> 2.3 </td> <td align="right"> 2.9 </td> <td align="right"> 7.8 </td> <td align="right"> 1.6 </td> <td align="right"> 0.68 </td> </tr>
+  <tr> <td align="right"> MeanKurtosisOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -1.7 </td> <td align="right"> 0.34 </td> <td align="right">  28 </td> <td align="right"> 1.7e+02 </td> <td align="right">  78 </td> <td align="right"> 8.9e+03 </td> <td align="right"> 9.2e+02 </td> <td align="right"> 5.6 </td> </tr>
+  <tr> <td align="right"> MinorityClassPerentage </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 7.9 </td> <td align="right">  14 </td> <td align="right">  20 </td> <td align="right">  33 </td> <td align="right">  50 </td> <td align="right">  15 </td> <td align="right"> 0.77 </td> </tr>
+  <tr> <td align="right"> J48.00001.Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.33 </td> <td align="right"> 0.67 </td> <td align="right"> 0.59 </td> <td align="right"> 0.87 </td> <td align="right">   1 </td> <td align="right"> 0.32 </td> <td align="right"> 0.54 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth2ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.075 </td> <td align="right"> 0.17 </td> <td align="right"> 0.25 </td> <td align="right"> 0.33 </td> <td align="right"> 0.96 </td> <td align="right"> 0.28 </td> <td align="right"> 1.1 </td> </tr>
+  <tr> <td align="right"> Quartile2KurtosisOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -2 </td> <td align="right">   0 </td> <td align="right"> 0.71 </td> <td align="right">  99 </td> <td align="right">  10 </td> <td align="right"> 9.3e+03 </td> <td align="right"> 9.1e+02 </td> <td align="right"> 9.2 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth3AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.72 </td> <td align="right"> 0.87 </td> <td align="right"> 0.81 </td> <td align="right"> 0.94 </td> <td align="right">   1 </td> <td align="right"> 0.23 </td> <td align="right"> 0.29 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth2ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.12 </td> <td align="right"> 0.24 </td> <td align="right"> 0.3 </td> <td align="right"> 0.41 </td> <td align="right"> 0.96 </td> <td align="right"> 0.28 </td> <td align="right"> 0.94 </td> </tr>
+  <tr> <td align="right"> Quartile1AttributeEntropy </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">  -0 </td> <td align="right"> 0.63 </td> <td align="right">   1 </td> <td align="right"> 1.2 </td> <td align="right"> 1.6 </td> <td align="right"> 4.9 </td> <td align="right"> 1.1 </td> <td align="right"> 0.91 </td> </tr>
+  <tr> <td align="right"> MeanMeansOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -9.4e+03 </td> <td align="right"> 0.0013 </td> <td align="right">  39 </td> <td align="right"> 2.1e+04 </td> <td align="right"> 4.7e+02 </td> <td align="right"> 2e+06 </td> <td align="right"> 2e+05 </td> <td align="right"> 9.5 </td> </tr>
+  <tr> <td align="right"> MeanStdDevOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">  40 </td> <td align="right"> 1.2e+04 </td> <td align="right"> 1.6e+03 </td> <td align="right"> 1e+06 </td> <td align="right"> 1e+05 </td> <td align="right"> 8.3 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth1Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.093 </td> <td align="right"> 0.5 </td> <td align="right"> 0.45 </td> <td align="right"> 0.81 </td> <td align="right">   1 </td> <td align="right"> 0.39 </td> <td align="right"> 0.87 </td> </tr>
+  <tr> <td align="right"> Dimensionality </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 8.7e-05 </td> <td align="right"> 0.008 </td> <td align="right"> 0.02 </td> <td align="right"> 1.3 </td> <td align="right"> 0.055 </td> <td align="right">  20 </td> <td align="right">   4 </td> <td align="right">   3 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth2AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.7 </td> <td align="right"> 0.86 </td> <td align="right"> 0.79 </td> <td align="right"> 0.94 </td> <td align="right">   1 </td> <td align="right"> 0.23 </td> <td align="right"> 0.3 </td> </tr>
+  <tr> <td align="right"> MinAttributeEntropy </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">  -0 </td> <td align="right"> 0.26 </td> <td align="right"> 0.96 </td> <td align="right"> 1.1 </td> <td align="right">   1 </td> <td align="right"> 4.9 </td> <td align="right"> 1.2 </td> <td align="right"> 1.1 </td> </tr>
+  <tr> <td align="right"> NaiveBayesDdm.changes </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 6.3 </td> <td align="right">   6 </td> <td align="right"> 1.4e+02 </td> <td align="right">  18 </td> <td align="right"> 2.9 </td> </tr>
+  <tr> <td align="right"> MinNominalAttDistinctValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right"> 1.6 </td> <td align="right">   2 </td> <td align="right"> 1e+02 </td> <td align="right">  11 </td> <td align="right"> 6.4 </td> </tr>
+  <tr> <td align="right"> MinorityClassSize </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 1.2e+02 </td> <td align="right"> 2.6e+02 </td> <td align="right"> 1.1e+03 </td> <td align="right"> 6.2e+02 </td> <td align="right"> 1.9e+04 </td> <td align="right"> 2.6e+03 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> Quartile2AttributeEntropy </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 1.5 </td> <td align="right"> 1.7 </td> <td align="right">   2 </td> <td align="right"> 4.9 </td> <td align="right"> 1.1 </td> <td align="right"> 0.67 </td> </tr>
+  <tr> <td align="right"> Quartile1SkewnessOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.86 </td> <td align="right"> -0.086 </td> <td align="right"> 0.0076 </td> <td align="right"> 0.81 </td> <td align="right">   1 </td> <td align="right">  22 </td> <td align="right"> 2.8 </td> <td align="right"> 3.4 </td> </tr>
+  <tr> <td align="right"> Quartile3StdDevOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.5 </td> <td align="right">  20 </td> <td align="right"> 4.7e+03 </td> <td align="right">  81 </td> <td align="right"> 4.3e+05 </td> <td align="right"> 4.2e+04 </td> <td align="right"> 8.9 </td> </tr>
+  <tr> <td align="right"> Quartile1MutualInformation </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right"> 0.0012 </td> <td align="right"> 0.0054 </td> <td align="right"> 0.19 </td> <td align="right"> 0.034 </td> <td align="right"> 4.2 </td> <td align="right"> 0.71 </td> <td align="right"> 3.7 </td> </tr>
+  <tr> <td align="right"> Quartile2SkewnessOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.27 </td> <td align="right"> 0.077 </td> <td align="right"> 0.68 </td> <td align="right"> 2.3 </td> <td align="right"> 2.4 </td> <td align="right">  85 </td> <td align="right"> 8.5 </td> <td align="right"> 3.7 </td> </tr>
+  <tr> <td align="right"> MajorityClassSize </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  16 </td> <td align="right"> 2.8e+02 </td> <td align="right"> 6.8e+02 </td> <td align="right"> 2.7e+03 </td> <td align="right"> 1.8e+03 </td> <td align="right"> 3.7e+04 </td> <td align="right"> 6.2e+03 </td> <td align="right"> 2.3 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth3ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.074 </td> <td align="right"> 0.16 </td> <td align="right"> 0.24 </td> <td align="right"> 0.32 </td> <td align="right"> 0.94 </td> <td align="right"> 0.27 </td> <td align="right"> 1.1 </td> </tr>
+  <tr> <td align="right"> MaxAttributeEntropy </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right"> 0.76 </td> <td align="right"> 1.6 </td> <td align="right"> 2.5 </td> <td align="right"> 2.8 </td> <td align="right"> 3.5 </td> <td align="right">  10 </td> <td align="right"> 1.8 </td> <td align="right"> 0.62 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth2Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.16 </td> <td align="right"> 0.38 </td> <td align="right"> 0.4 </td> <td align="right"> 0.66 </td> <td align="right">   1 </td> <td align="right"> 0.34 </td> <td align="right"> 0.83 </td> </tr>
+  <tr> <td align="right"> HoeffdingDDM.changes </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right"> 6.4 </td> <td align="right">   6 </td> <td align="right"> 1.7e+02 </td> <td align="right">  18 </td> <td align="right"> 2.9 </td> </tr>
+  <tr> <td align="right"> Quartile3KurtosisOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -1.8 </td> <td align="right"> 0.85 </td> <td align="right">   8 </td> <td align="right"> 1.7e+02 </td> <td align="right">  31 </td> <td align="right"> 1.5e+04 </td> <td align="right"> 1.5e+03 </td> <td align="right"> 8.4 </td> </tr>
+  <tr> <td align="right"> NaiveBayesKappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.082 </td> <td align="right"> 0.3 </td> <td align="right"> 0.53 </td> <td align="right"> 0.55 </td> <td align="right"> 0.82 </td> <td align="right">   1 </td> <td align="right"> 0.3 </td> <td align="right"> 0.54 </td> </tr>
+  <tr> <td align="right"> HoeffdingDDM.warnings </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">   4 </td> <td align="right">  15 </td> <td align="right">  10 </td> <td align="right"> 4.6e+02 </td> <td align="right">  50 </td> <td align="right"> 3.3 </td> </tr>
+  <tr> <td align="right"> Quartile2StdDevOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.36 </td> <td align="right">   1 </td> <td align="right"> 6.8e+02 </td> <td align="right"> 9.8 </td> <td align="right"> 5.6e+04 </td> <td align="right"> 5.5e+03 </td> <td align="right"> 8.1 </td> </tr>
+  <tr> <td align="right"> MeanNominalAttDistinctValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right"> 5.2 </td> <td align="right"> 2.8 </td> <td align="right"> 2.7e+02 </td> <td align="right">  28 </td> <td align="right"> 5.5 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth1ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.08 </td> <td align="right"> 0.19 </td> <td align="right"> 0.27 </td> <td align="right"> 0.38 </td> <td align="right"> 0.98 </td> <td align="right"> 0.29 </td> <td align="right"> 1.1 </td> </tr>
+  <tr> <td align="right"> MaxMeansOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.00013 </td> <td align="right"> 3.4 </td> <td align="right"> 3.3e+03 </td> <td align="right"> 2.7e+06 </td> <td align="right"> 1.2e+05 </td> <td align="right"> 2.6e+07 </td> <td align="right"> 7.8e+06 </td> <td align="right"> 2.9 </td> </tr>
+  <tr> <td align="right"> NumberOfInstances </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 5e+02 </td> <td align="right"> 8e+02 </td> <td align="right"> 1.6e+03 </td> <td align="right"> 5.1e+03 </td> <td align="right"> 4.6e+03 </td> <td align="right"> 4.9e+04 </td> <td align="right"> 9.5e+03 </td> <td align="right"> 1.9 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth1Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.088 </td> <td align="right"> 0.33 </td> <td align="right"> 0.37 </td> <td align="right"> 0.65 </td> <td align="right">   1 </td> <td align="right"> 0.35 </td> <td align="right"> 0.94 </td> </tr>
+  <tr> <td align="right"> J48.001.AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.5 </td> <td align="right"> 0.71 </td> <td align="right"> 0.87 </td> <td align="right"> 0.82 </td> <td align="right"> 0.94 </td> <td align="right">   1 </td> <td align="right"> 0.16 </td> <td align="right"> 0.19 </td> </tr>
+  <tr> <td align="right"> MaxSkewnessOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.0012 </td> <td align="right"> 2.3 </td> <td align="right">  21 </td> <td align="right">  37 </td> <td align="right">  53 </td> <td align="right"> 4.4e+02 </td> <td align="right">  56 </td> <td align="right"> 1.5 </td> </tr>
+  <tr> <td align="right"> J48.0001.AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.5 </td> <td align="right"> 0.71 </td> <td align="right"> 0.87 </td> <td align="right"> 0.82 </td> <td align="right"> 0.94 </td> <td align="right">   1 </td> <td align="right"> 0.16 </td> <td align="right"> 0.2 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth3AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.66 </td> <td align="right"> 0.79 </td> <td align="right"> 0.76 </td> <td align="right"> 0.89 </td> <td align="right">   1 </td> <td align="right"> 0.22 </td> <td align="right"> 0.28 </td> </tr>
+  <tr> <td align="right"> MeanMutualInformation </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right"> 0.019 </td> <td align="right"> 0.052 </td> <td align="right"> 0.34 </td> <td align="right"> 0.23 </td> <td align="right"> 4.2 </td> <td align="right"> 0.79 </td> <td align="right"> 2.3 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth1ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.13 </td> <td align="right"> 0.24 </td> <td align="right"> 0.31 </td> <td align="right"> 0.46 </td> <td align="right"> 0.98 </td> <td align="right"> 0.29 </td> <td align="right"> 0.93 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth2AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.64 </td> <td align="right"> 0.77 </td> <td align="right"> 0.74 </td> <td align="right"> 0.87 </td> <td align="right">   1 </td> <td align="right"> 0.21 </td> <td align="right"> 0.29 </td> </tr>
+  <tr> <td align="right"> MinMeansOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -9.2e+07 </td> <td align="right"> -11 </td> <td align="right">   0 </td> <td align="right"> -8.7e+06 </td> <td align="right"> 0.14 </td> <td align="right"> 4e+03 </td> <td align="right"> 2.7e+07 </td> <td align="right"> -3.1 </td> </tr>
+  <tr> <td align="right"> PercentageOfBinaryFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.81 </td> <td align="right"> 8.6 </td> <td align="right">  10 </td> <td align="right">  95 </td> <td align="right">  16 </td> <td align="right"> 1.9 </td> </tr>
+  <tr> <td align="right"> NumberOfFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   4 </td> <td align="right">  13 </td> <td align="right">  36 </td> <td align="right"> 1.3e+03 </td> <td align="right">  82 </td> <td align="right"> 1.1e+04 </td> <td align="right"> 3.4e+03 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> NaiveBayesAUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.5 </td> <td align="right"> 0.79 </td> <td align="right"> 0.9 </td> <td align="right"> 0.86 </td> <td align="right"> 0.97 </td> <td align="right">   1 </td> <td align="right"> 0.14 </td> <td align="right"> 0.16 </td> </tr>
+  <tr> <td align="right"> DefaultAccuracy </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.01 </td> <td align="right"> 0.19 </td> <td align="right"> 0.54 </td> <td align="right"> 0.49 </td> <td align="right"> 0.75 </td> <td align="right"> 0.95 </td> <td align="right"> 0.29 </td> <td align="right"> 0.59 </td> </tr>
+  <tr> <td align="right"> NaiveBayesDdm.warnings </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">   5 </td> <td align="right">  15 </td> <td align="right">   9 </td> <td align="right"> 3.9e+02 </td> <td align="right">  47 </td> <td align="right"> 3.1 </td> </tr>
+  <tr> <td align="right"> Quartile3MeansOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.00036 </td> <td align="right"> 0.42 </td> <td align="right">  28 </td> <td align="right"> 2.5e+03 </td> <td align="right"> 1.6e+02 </td> <td align="right"> 1.6e+05 </td> <td align="right"> 1.6e+04 </td> <td align="right"> 6.4 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth1AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.62 </td> <td align="right"> 0.8 </td> <td align="right"> 0.76 </td> <td align="right"> 0.94 </td> <td align="right">   1 </td> <td align="right"> 0.25 </td> <td align="right"> 0.32 </td> </tr>
+  <tr> <td align="right"> MaxMutualInformation </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right"> 0.06 </td> <td align="right"> 0.22 </td> <td align="right"> 0.6 </td> <td align="right"> 0.5 </td> <td align="right"> 4.2 </td> <td align="right">   1 </td> <td align="right"> 1.7 </td> </tr>
+  <tr> <td align="right"> HoeffdingAdwin.warnings </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth1AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.64 </td> <td align="right"> 0.71 </td> <td align="right"> 0.72 </td> <td align="right"> 0.83 </td> <td align="right">   1 </td> <td align="right"> 0.22 </td> <td align="right"> 0.3 </td> </tr>
+  <tr> <td align="right"> J48.0001.Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.33 </td> <td align="right"> 0.67 </td> <td align="right"> 0.6 </td> <td align="right"> 0.87 </td> <td align="right">   1 </td> <td align="right"> 0.32 </td> <td align="right"> 0.54 </td> </tr>
+  <tr> <td align="right"> Quartile1MeansOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.79 </td> <td align="right"> 1.6e-08 </td> <td align="right"> 0.36 </td> <td align="right"> 1.5e+02 </td> <td align="right"> 2.4 </td> <td align="right"> 4.2e+03 </td> <td align="right"> 4.9e+02 </td> <td align="right"> 3.3 </td> </tr>
+  <tr> <td align="right"> RandomTreeDepth3Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.17 </td> <td align="right"> 0.44 </td> <td align="right"> 0.44 </td> <td align="right"> 0.67 </td> <td align="right">   1 </td> <td align="right"> 0.32 </td> <td align="right"> 0.74 </td> </tr>
+  <tr> <td align="right"> Quartile1StdDevOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.18 </td> <td align="right"> 0.56 </td> <td align="right">  83 </td> <td align="right"> 2.5 </td> <td align="right"> 6.6e+02 </td> <td align="right"> 2.1e+02 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth2Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.17 </td> <td align="right"> 0.54 </td> <td align="right"> 0.49 </td> <td align="right"> 0.81 </td> <td align="right">   1 </td> <td align="right"> 0.37 </td> <td align="right"> 0.74 </td> </tr>
+  <tr> <td align="right"> Quartile2MeansOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -0.046 </td> <td align="right"> 0.04 </td> <td align="right"> 1.1 </td> <td align="right"> 5.3e+02 </td> <td align="right">  24 </td> <td align="right"> 2.9e+04 </td> <td align="right"> 2.9e+03 </td> <td align="right"> 5.4 </td> </tr>
+  <tr> <td align="right"> J48.00001.AUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.5 </td> <td align="right"> 0.71 </td> <td align="right"> 0.86 </td> <td align="right"> 0.82 </td> <td align="right"> 0.94 </td> <td align="right">   1 </td> <td align="right"> 0.16 </td> <td align="right"> 0.2 </td> </tr>
+  <tr> <td align="right"> Quartile2MutualInformation </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right"> 0.0042 </td> <td align="right"> 0.03 </td> <td align="right"> 0.31 </td> <td align="right"> 0.23 </td> <td align="right"> 4.2 </td> <td align="right"> 0.77 </td> <td align="right"> 2.5 </td> </tr>
+  <tr> <td align="right"> J48.001.Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.34 </td> <td align="right"> 0.67 </td> <td align="right"> 0.6 </td> <td align="right"> 0.86 </td> <td align="right">   1 </td> <td align="right"> 0.32 </td> <td align="right"> 0.53 </td> </tr>
+  <tr> <td align="right"> PercentageOfInstancesWithMissingValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 5.5 </td> <td align="right">   0 </td> <td align="right"> 1e+02 </td> <td align="right">  20 </td> <td align="right"> 3.7 </td> </tr>
+  <tr> <td align="right"> NumberOfClasses </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right"> 7.8 </td> <td align="right">   8 </td> <td align="right"> 1e+02 </td> <td align="right">  17 </td> <td align="right"> 2.1 </td> </tr>
+  <tr> <td align="right"> StdvNominalAttDistinctValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right">  -1 </td> <td align="right"> 5.7 </td> <td align="right"> 0.55 </td> <td align="right"> 5.4e+02 </td> <td align="right">  53 </td> <td align="right"> 9.2 </td> </tr>
+  <tr> <td align="right"> ClassEntropy </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.29 </td> <td align="right"> 0.83 </td> <td align="right">   1 </td> <td align="right"> 1.8 </td> <td align="right"> 2.9 </td> <td align="right"> 6.6 </td> <td align="right"> 1.4 </td> <td align="right"> 0.79 </td> </tr>
+  <tr> <td align="right"> Quartile1KurtosisOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -2 </td> <td align="right"> -0.84 </td> <td align="right"> -0.092 </td> <td align="right">  29 </td> <td align="right"> 2.1 </td> <td align="right"> 2.7e+03 </td> <td align="right"> 2.6e+02 </td> <td align="right">   9 </td> </tr>
+  <tr> <td align="right"> Quartile3MutualInformation </td> <td align="right"> 105 </td> <td align="right">  68 </td> <td align="right">   0 </td> <td align="right"> 0.018 </td> <td align="right"> 0.072 </td> <td align="right"> 0.49 </td> <td align="right"> 0.31 </td> <td align="right"> 4.2 </td> <td align="right">   1 </td> <td align="right"> 2.1 </td> </tr>
+  <tr> <td align="right"> MinSkewnessOfNumericAtts </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> -76 </td> <td align="right"> -3.8 </td> <td align="right"> -0.99 </td> <td align="right"> -11 </td> <td align="right"> -0.0033 </td> <td align="right"> 1.8 </td> <td align="right">  22 </td> <td align="right"> -2.1 </td> </tr>
+  <tr> <td align="right"> PercentageOfSymbolicFeatures </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.0091 </td> <td align="right"> 1.5 </td> <td align="right">   5 </td> <td align="right">  23 </td> <td align="right">  23 </td> <td align="right"> 1e+02 </td> <td align="right">  33 </td> <td align="right"> 1.5 </td> </tr>
+  <tr> <td align="right"> J48.0001.ErrRate </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 0.057 </td> <td align="right"> 0.15 </td> <td align="right"> 0.2 </td> <td align="right"> 0.28 </td> <td align="right"> 0.81 </td> <td align="right"> 0.2 </td> <td align="right"> 0.97 </td> </tr>
+  <tr> <td align="right"> NumberOfInstancesWithMissingValues </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right"> 1.5e+02 </td> <td align="right">   0 </td> <td align="right"> 3.8e+03 </td> <td align="right"> 6.3e+02 </td> <td align="right"> 4.3 </td> </tr>
+  <tr> <td align="right"> REPTreeDepth3Kappa </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right">  -1 </td> <td align="right"> 0.19 </td> <td align="right"> 0.62 </td> <td align="right"> 0.51 </td> <td align="right"> 0.82 </td> <td align="right">   1 </td> <td align="right"> 0.36 </td> <td align="right"> 0.7 </td> </tr>
+  <tr> <td align="right"> DecisionStumpAUC </td> <td align="right"> 105 </td> <td align="right">   0 </td> <td align="right"> 0.5 </td> <td align="right"> 0.66 </td> <td align="right"> 0.72 </td> <td align="right"> 0.73 </td> <td align="right"> 0.78 </td> <td align="right"> 0.96 </td> <td align="right"> 0.11 </td> <td align="right"> 0.15 </td> </tr>
+   </table>
+
+
+<h3> Algorithm Feature Values</h3><!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:32 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> obs </th> <th> nas </th> <th> min </th> <th> qu_1st </th> <th> med </th> <th> mean </th> <th> qu_3rd </th> <th> max </th> <th> sd </th> <th> coeff_var </th>  </tr>
+  <tr> <td align="right"> Lines..Average. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 7.4 </td> <td align="right">  12 </td> <td align="right">  15 </td> <td align="right">  15 </td> <td align="right">  18 </td> <td align="right">  24 </td> <td align="right"> 4.5 </td> <td align="right"> 0.31 </td> </tr>
+  <tr> <td align="right"> Lines..Total. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 1.8e+02 </td> <td align="right"> 3.8e+02 </td> <td align="right"> 6e+02 </td> <td align="right"> 6.5e+02 </td> <td align="right"> 9.6e+02 </td> <td align="right"> 1.2e+03 </td> <td align="right"> 3.3e+02 </td> <td align="right"> 0.51 </td> </tr>
+  <tr> <td align="right"> Size..Average. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 1.2e+04 </td> <td align="right"> 2.5e+04 </td> <td align="right"> 3.2e+04 </td> <td align="right"> 3.6e+04 </td> <td align="right"> 4.9e+04 </td> <td align="right"> 6.5e+04 </td> <td align="right"> 1.6e+04 </td> <td align="right"> 0.44 </td> </tr>
+  <tr> <td align="right"> Size..Total. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 1.2e+04 </td> <td align="right"> 2.5e+04 </td> <td align="right"> 3.2e+04 </td> <td align="right"> 3.6e+04 </td> <td align="right"> 4.9e+04 </td> <td align="right"> 6.5e+04 </td> <td align="right"> 1.6e+04 </td> <td align="right"> 0.44 </td> </tr>
+  <tr> <td align="right"> Number.of.files </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+  <tr> <td align="right"> Cyclomatic..Average. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 0.42 </td> <td align="right">   2 </td> <td align="right"> 2.4 </td> <td align="right"> 2.3 </td> <td align="right"> 2.9 </td> <td align="right"> 4.3 </td> <td align="right"> 1.1 </td> <td align="right"> 0.46 </td> </tr>
+  <tr> <td align="right"> Cyclomatic..Total. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">  13 </td> <td align="right">  50 </td> <td align="right">  80 </td> <td align="right">  98 </td> <td align="right"> 1.5e+02 </td> <td align="right"> 2.3e+02 </td> <td align="right">  64 </td> <td align="right"> 0.65 </td> </tr>
+  <tr> <td align="right"> Max.Indent..Average. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 1.2 </td> <td align="right"> 1.6 </td> <td align="right"> 1.8 </td> <td align="right"> 1.8 </td> <td align="right">   2 </td> <td align="right"> 2.3 </td> <td align="right"> 0.34 </td> <td align="right"> 0.19 </td> </tr>
+  <tr> <td align="right"> Max.Indent..Total. </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">  25 </td> <td align="right">  42 </td> <td align="right">  68 </td> <td align="right">  73 </td> <td align="right">  93 </td> <td align="right"> 1.5e+02 </td> <td align="right">  34 </td> <td align="right"> 0.46 </td> </tr>
+  <tr> <td align="right"> nb_nodes </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 4.4e+02 </td> <td align="right"> 1.2e+03 </td> <td align="right"> 1.9e+03 </td> <td align="right"> 2.4e+03 </td> <td align="right"> 3.9e+03 </td> <td align="right"> 4.9e+03 </td> <td align="right"> 1.5e+03 </td> <td align="right"> 0.63 </td> </tr>
+  <tr> <td align="right"> nb_edges </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 4.4e+02 </td> <td align="right"> 1.2e+03 </td> <td align="right"> 1.9e+03 </td> <td align="right"> 2.4e+03 </td> <td align="right"> 3.9e+03 </td> <td align="right"> 4.8e+03 </td> <td align="right"> 1.5e+03 </td> <td align="right"> 0.63 </td> </tr>
+  <tr> <td align="right"> degree_min </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   1 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+  <tr> <td align="right"> degree_max </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   8 </td> <td align="right">   8 </td> <td align="right">   8 </td> <td align="right">   8 </td> <td align="right">   8 </td> <td align="right">   8 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+  <tr> <td align="right"> degree_mean </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right">   2 </td> <td align="right"> 0.0012 </td> <td align="right"> 0.00058 </td> </tr>
+  <tr> <td align="right"> degree_variance </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 0.84 </td> <td align="right"> 0.88 </td> <td align="right"> 0.9 </td> <td align="right"> 0.91 </td> <td align="right"> 0.93 </td> <td align="right">   1 </td> <td align="right"> 0.052 </td> <td align="right"> 0.057 </td> </tr>
+  <tr> <td align="right"> degree_entropy </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 1.2 </td> <td align="right"> 1.2 </td> <td align="right"> 1.2 </td> <td align="right"> 1.2 </td> <td align="right"> 1.2 </td> <td align="right"> 1.2 </td> <td align="right"> 0.015 </td> <td align="right"> 0.013 </td> </tr>
+  <tr> <td align="right"> transitivity </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> clustering_min </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> clustering_max </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> clustering_mean </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> clustering_variance </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> </tr>
+  <tr> <td align="right"> path_min </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">   3 </td> <td align="right">   3 </td> <td align="right">   3 </td> <td align="right">   3 </td> <td align="right">   3 </td> <td align="right">   3 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+  <tr> <td align="right"> paths_max </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">  20 </td> <td align="right">  27 </td> <td align="right">  31 </td> <td align="right">  32 </td> <td align="right">  36 </td> <td align="right">  63 </td> <td align="right"> 8.9 </td> <td align="right"> 0.28 </td> </tr>
+  <tr> <td align="right"> path_mean </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">  12 </td> <td align="right">  16 </td> <td align="right">  18 </td> <td align="right">  18 </td> <td align="right">  20 </td> <td align="right">  23 </td> <td align="right"> 2.7 </td> <td align="right"> 0.15 </td> </tr>
+  <tr> <td align="right"> path_variance </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right">  14 </td> <td align="right">  20 </td> <td align="right">  25 </td> <td align="right">  28 </td> <td align="right">  31 </td> <td align="right">  72 </td> <td align="right">  12 </td> <td align="right"> 0.44 </td> </tr>
+  <tr> <td align="right"> path_entropy </td> <td align="right">  21 </td> <td align="right">   0 </td> <td align="right"> 2.6 </td> <td align="right"> 2.9 </td> <td align="right">   3 </td> <td align="right">   3 </td> <td align="right"> 3.1 </td> <td align="right"> 3.4 </td> <td align="right"> 0.18 </td> <td align="right"> 0.061 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Summary of feature steps </h2>
+
+The following table summarizes the feature steps over all instances.
+<ul>
+  <li> size (percentage of features affected by this step)
+  <li> ok, ..., other (percentage of run status)
+  <li> cost_min, cost_mean, cost_max (range of costs for this step)
+  <li> cost_na (percentage of missing values occuring in costs)
+</ul>
+
+<br>
+
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:26:32 2021 -->
+<table border=1>
+<tr> <th>  </th> <th> size </th> <th> ok </th> <th> timeout </th> <th> memout </th> <th> presolved </th> <th> crash </th> <th> other </th> <th> unknown </th>  </tr>
+  <tr> <td align="right"> ALL </td> <td align="right">   1 </td> <td align="right"> 1e+02 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+  <tr> <td align="right"> code </td> <td align="right">   1 </td> <td align="right"> 1e+02 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+  <tr> <td align="right"> AST </td> <td align="right">   1 </td> <td align="right"> 1e+02 </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">  </td> <td align="right">   0 </td> <td align="right">   0 </td> <td align="right">   0 </td> </tr>
+   </table>
+
+
+<br>
+<h2> Duplicated Features </h2>
+
+Underneath, you'll find blocks of duplicated instnace features, i.e., observations that have equal values over all features. Please note, that only a maximum of 5 duplicates per block are shown.<br>
+<br>
+
+There were no duplicated features.
+
+</body>
+</html>

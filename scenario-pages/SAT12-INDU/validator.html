@@ -2,7 +2,7 @@
 
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -70,30 +70,15 @@
 
 <h1>Output of data validator</h1>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="output"><pre class="knitr r">## % [WARNING]: Have not found algorithm_cutoff_memory
-## % [WARNING]: Have not found features_stochastic
-## % [WARNING]: Have not found algortihms_deterministics
-## % [WARNING]: Have not found algorithms_stochastic
-## % Read SAT12-INDU/description.txt
-## % Read SAT12-INDU/algorithm_runs.arff
-## % Read SAT12-INDU/feature_values.arff
-## % Read SAT12-INDU/feature_runstatus.arff
-## % Read SAT12-INDU/ground_truth.arff
-## % Read SAT12-INDU/feature_costs.arff
-## % Read /home/larsko/work/coseal/aslib_data/SAT12-INDU/cv.arff
-## % 1-th repetition: 116,117,117,117,116,117,116,117,117,117 distribution
-## % Used Feature Steps (4): Pre,CG,KLB,Basic
-## % Remove features: cl_num_max,gsat_FirstLocalMinStep_Mean,lobjois_log_num_nodes_over_vars,gsat_BestAvgImprovement_CoeffVariance,cl_num_q10,cl_num_q75,SP_bias_q25,cl_num_q50,DIAMETER_coeff_variation,cl_num_coeff_variation,saps_FirstLocalMinStep_Q90,SP_unconstraint_min,cl_size_q75,SP_unconstraint_q10,SP_bias_min,SP_unconstraint_max,gsat_FirstLocalMinStep_Q10,cl_size_q50,saps_FirstLocalMinRatio_Mean,lobjois_mean_depth_over_vars,cl_size_q10,saps_BestAvgImprovement_Mean,gsat_BestAvgImprovement_Mean,SP_unconstraint_q75,saps_FirstLocalMinStep_Q10,saps_BestSolution_CoeffVariance,SP_unconstraint_q90,SP_bias_max,SP_bias_q75,cl_num_q25,SP_unconstraint_q50,cl_size_mean,DIAMETER_entropy,saps_BestAvgImprovement_CoeffVariance,SP_bias_q50,gsat_FirstLocalMinRatio_CoeffVariance,gsat_FirstLocalMinRatio_Mean,SP_bias_q10,cl_size_coeff_variation,SP_bias_q90,SP_unconstraint_coeff_variation,gsat_FirstLocalMinStep_Median,saps_FirstLocalMinStep_Mean,saps_BestSolution_Mean,SP_bias_coeff_variation,gsat_BestSolution_Mean,SP_unconstraint_q25,SP_bias_mean,cl_size_max,cl_size_q25,SP_unconstraint_mean,gsat_BestSolution_CoeffVariance,cl_size_min,cl_num_q90,gsat_FirstLocalMinStep_Q90,cl_num_min,gsat_FirstLocalMinStep_CoeffVariance,DIAMETER_max,cl_size_q90,saps_FirstLocalMinRatio_CoeffVariance,DIAMETER_mean,cl_num_mean,DIAMETER_min,saps_FirstLocalMinStep_CoeffVariance,saps_FirstLocalMinStep_Median
-## % 
-## % Used features (50): CG_mean,BINARYp,reducedVars,VG_mean,VCG_VAR_mean,VG_min,VCG_VAR_coeff_variation,nvarsOrig,CG_coeff_variation,VG_max,CG_max,POSNEG_RATIO_CLAUSE_max,horn_clauses_fraction,nclauses,vars_clauses_ratio,CG_entropy,UNARY,cluster_coeff_mean,VCG_CLAUSE_coeff_variation,POSNEG_RATIO_VAR_max,VCG_VAR_max,POSNEG_RATIO_VAR_entropy,TRINARYp,POSNEG_RATIO_VAR_min,HORNY_VAR_max,VCG_CLAUSE_mean,VCG_CLAUSE_min,cluster_coeff_entropy,POSNEG_RATIO_CLAUSE_min,HORNY_VAR_coeff_variation,VCG_VAR_min,nvars,nclausesOrig,POSNEG_RATIO_CLAUSE_mean,CG_min,VG_coeff_variation,POSNEG_RATIO_VAR_mean,cluster_coeff_coeff_variation,POSNEG_RATIO_CLAUSE_coeff_variation,VCG_CLAUSE_entropy,VCG_VAR_entropy,cluster_coeff_min,POSNEG_RATIO_VAR_stdev,HORNY_VAR_entropy,cluster_coeff_max,HORNY_VAR_mean,VCG_CLAUSE_max,HORNY_VAR_min,POSNEG_RATIO_CLAUSE_entropy,reducedClauses
-## % 
-## % Check Consistency and Completeness of input data
-## % Instances: 			 1167
-## % Incomplete Feature Vector: 	 0
-## % Unsolvable Instances (status): 	 209
-## % Valid Instances: 			 958
-## % Presolved: 			 39
-## % Average Feature Costs on all features: 	 80.9089
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in file.path(aslib.validator.dir, &quot;data_check_tool_python/src/main.py&quot;): object 'aslib.validator.dir' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in eval(expr, envir, enclos): object 'fn.main' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): cannot coerce type 'closure' to vector of type 'character'
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in shortenPathsInValidator(s, scenario.dir): object 's' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): object 's' not found
 </pre></div>
 
 </div></div>

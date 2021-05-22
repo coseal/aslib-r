@@ -2,7 +2,7 @@
 
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -70,33 +70,15 @@
 
 <h1>Output of data validator</h1>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in system3(&quot;python2&quot;, args, stdout = TRUE, stderr = TRUE): Command: python2 ~/work/coseal/aslib-spec//data_check_tool_python/src/main.py --dir /home/larsko/work/coseal/aslib_data/GRAPHS-2015; exit code: 255; output: % [WARNING]: Not found: /home/larsko/work/coseal/aslib_data/GRAPHS-2015/ground_truth.arff (maybe you want to add it)
-## [ERROR]: 'performance_measures' has to be list
-## % Read /home/larsko/work/coseal/aslib_data/GRAPHS-2015/description.txt
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="error"><pre class="knitr r">## Error in file.path(aslib.validator.dir, &quot;data_check_tool_python/src/main.py&quot;): object 'aslib.validator.dir' not found
 </pre></div>
-<div class="output"><pre class="knitr r">## % [WARNING]: Have not found algorithm_cutoff_memory
-## % [WARNING]: Have not found algortihms_deterministics
-## % [WARNING]: Have not found algorithms_stochastic
-## % Read CSP-MZN-2013/description.txt
-## % Read CSP-MZN-2013/algorithm_runs.arff
-## % Read CSP-MZN-2013/feature_values.arff
-## % Read CSP-MZN-2013/feature_runstatus.arff
-## % Read CSP-MZN-2013/ground_truth.arff
-## % Read CSP-MZN-2013/feature_costs.arff
-## % Read /home/larsko/work/coseal/aslib_data/CSP-MZN-2013/cv.arff
-## % 1-th repetition: 464,464,465,465,464,464,464,464,464,464 distribution
-## % Used Feature Steps (2): dynamic,static
-## % Remove features: 
-## % 
-## % Used features (155): d_ratio_bool_cons,c_sum_domdeg_cons,s_set_search,d_ratio_int_cons,gc_all_equal,dy_nodes,d_set_vars,gc_decr_inc,gc_member,d_ratio_int_vars,d_array_cons,dy_ratio_props,o_deg_cons,dy_peak,v_def_vars,c_ent_dom_cons,c_sum_ari_cons,gr_cv_clust_cg,d_ratio_float_cons,gr_cv_deg_vg,v_min_domdeg_vars,o_de,gc_circuit,o_deg_avg,o_di,c_avg_domdeg_cons,v_cv_dom_vars,s_int_search,gr_avg_deg_cg,s_goal,v_avg_domdeg_vars,gc_all_diff,s_input_order,s_first_fail,v_avg_deg_vars,gc_at_least_most,c_logprod_dom_cons,gc_bin_packing,c_min_deg_cons,d_int_vars,c_sum_dom_cons,gc_ratio_globs,dy_props,v_sum_dom_vars,c_cv_domdeg_cons,dy_static_time,gc_diffn,gr_cv_deg_cg,dy_sols,gr_min_deg_cg,gc_sort,v_min_dom_vars,dy_ratio_nodes,v_ent_dom_vars,o_dom_std,d_ratio_bool_vars,c_logprod_deg_cons,gc_global_cons,v_ratio_bounded,gr_ent_clust_cg,gc_cumulative,o_dom_avg,v_min_deg_vars,s_other_val,d_ratio_array_cons,c_min_domdeg_cons,v_sum_domdeg_vars,v_ent_domdeg_vars,gc_precede,c_max_dom_cons,c_ent_deg_cons,d_bool_cons,s_other_var,d_bool_vars,c_domain,v_logprod_dom_vars,gc_array_set,v_sum_deg_vars,gr_max_diam_vg,gc_global_card,gr_min_diam_vg,c_min_dom_cons,d_set_cons,o_dom,gr_max_clust_cg,gr_cv_diam_vg,c_bounds_d,gc_range,gr_min_deg_vg,v_ent_deg_vars,c_ent_domdeg_cons,c_bounds_z,dy_depth,c_bounds_r,gc_array_int,gc_inverse,gc_count,gc_set_weights,s_indomain_max,c_avg_dom_cons,c_max_deg_cons,gc_bool_lin,d_ratio_set_cons,gr_ent_diam_vg,gc_max_min_int,s_bool_search,dy_fzn_time,s_indomain_min,o_deg_std,gr_avg_diam_vg,c_cv_dom_cons,gr_max_deg_cg,gc_disjoint,d_int_cons,v_max_deg_vars,o_dom_deg,v_num_vars,v_num_consts,dy_fails,s_labeled_vars,v_num_aliases,gr_avg_deg_vg,v_logprod_deg_vars,d_float_cons,c_max_domdeg_cons,d_ratio_set_vars,gr_ent_deg_cg,gr_avg_clust_cg,v_ratio_vars,gc_link_set,d_float_vars,gc_regular,gc_schedule,gr_max_deg_vg,o_di_de,v_cv_deg_vars,c_avg_deg_cons,gc_among,v_intro_vars,o_deg,gc_nvalue,v_max_dom_vars,dy_tot_time,c_cv_deg_cons,d_ratio_float_vars,v_max_domdeg_vars,c_ratio_cons,gc_table,o_de_di,v_avg_dom_vars,c_priority,c_num_cons,v_cv_domdeg_vars,gr_ent_deg_vg,gr_min_clust_cg
-## % 
-## % Check Consistency and Completeness of input data
-## % Instances: 				 4642
-## % Incomplete Feature Vector: 	 0
-## % Unsolvable Instances (status): 	 944
-## % Valid Instances: 									 3698
-## % Presolved: 				 0
-## % Average Feature Costs on all features: 	 75.6080
+<div class="error"><pre class="knitr r">## Error in eval(expr, envir, enclos): object 'fn.main' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): cannot coerce type 'closure' to vector of type 'character'
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in shortenPathsInValidator(s, scenario.dir): object 's' not found
+</pre></div>
+<div class="error"><pre class="knitr r">## Error in paste0(x, collapse = sep): object 's' not found
 </pre></div>
 
 </div></div>

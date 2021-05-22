@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,8 +96,8 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:53:18 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:24:33 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  1.000 </td> <td> 219.867 </td> <td>  0.000 </td> </tr>
@@ -105,11 +105,12 @@ solver always has a misclassification penalty of zero.</li>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.879</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">9017.077</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">937.668</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.879</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">9017.077</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">937.668</FONT></b> </td> </tr>
   <tr> <td> classif </td> <td> rpart </td> <td>  0.955 </td> <td> 3441.043 </td> <td> 293.571 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.971</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">2311.115</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">207.588</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td>  0.969 </td> <td> 2435.541 </td> <td> 222.120 </td> </tr>
-  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FF0000"> 0.985</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1395.820</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">171.390</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 0.973</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">2209.651</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">216.007</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td>  0.971 </td> <td> 2320.161 </td> <td> 216.629 </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.925</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">5759.005</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">633.543</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FF0000"> 0.985</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">1395.820</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">171.390</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td> <b><FONT COLOR="#FFAAAA"> 0.977</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1959.323</FONT></b> </td> <td> 240.377 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.985</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">1374.170</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">149.749</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FFAAAA"> 0.984</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">1430.131</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">150.767</FONT></b> </td> </tr>
    </table>
 
 
@@ -122,21 +123,23 @@ The following default feature steps were used for model building:
 <p>
 Number of presolved instances: <code class="knitr inline">0</code>
 <p>
-The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">1.836 &times; 10<sup>4</sup></code>
-or on average: <code class="knitr inline">15.5725191</code>
+The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
+or on average: <code class="knitr inline">0</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">86</code> / <code class="knitr inline">86</code> features:
+The feature steps correspond to the following <code class="knitr inline">86</code> / <code class="knitr inline">86</code> instance features:
 <p>
 Variable.Count, VPOPS.Mean, POPS.Count, PSS.Maximum, PSS.Mean, <br>PSS.Standard.Deviation, VPOPS.Maximum, VPOPS.Standard.Deviation, Pattern.database.lower.bound.In.degree.Maximum, Pattern.database.lower.bound.In.degree.Mean, <br>Pattern.database.lower.bound.In.degree.Standard.Deviation, Pattern.database.lower.bound.Leaf.Count, Pattern.database.lower.bound.NTC.Count, Pattern.database.lower.bound.NTC.Max, Pattern.database.lower.bound.NTC.Mean, <br>Pattern.database.lower.bound.NTC.Standard.Deviation, Pattern.database.lower.bound.Out.degree.Maximum, Pattern.database.lower.bound.Out.degree.Mean, Pattern.database.lower.bound.Out.degree.Standard.Deviation, Pattern.database.lower.bound.Root.Count, <br>Pattern.database.lower.bound.Total.Degree.Maximum, Pattern.database.lower.bound.Total.Degree.Mean, Pattern.database.lower.bound.Total.Degree.Standard.Deviation, Simple.lower.bound.In.degree.Maximum, Simple.lower.bound.In.degree.Mean, <br>Simple.lower.bound.In.degree.Standard.Deviation, Simple.lower.bound.Leaf.Count, Simple.lower.bound.NTC.Count, Simple.lower.bound.NTC.Max, Simple.lower.bound.NTC.Mean, <br>Simple.lower.bound.NTC.Standard.Deviation, Simple.lower.bound.Out.degree.Maximum, Simple.lower.bound.Out.degree.Mean, Simple.lower.bound.Out.degree.Standard.Deviation, Simple.lower.bound.Root.Count, <br>Simple.lower.bound.Total.Degree.Maximum, Simple.lower.bound.Total.Degree.Mean, Simple.lower.bound.Total.Degree.Standard.Deviation, Greedy.hill.climbing.Error.bound, Greedy.hill.climbing.In.degree.Maximum, <br>Greedy.hill.climbing.In.degree.Mean, Greedy.hill.climbing.In.degree.Standard.Deviation, Greedy.hill.climbing.Leaf.Count, Greedy.hill.climbing.Out.degree.Maximum, Greedy.hill.climbing.Out.degree.Mean, <br>Greedy.hill.climbing.Out.degree.Standard.Deviation, Greedy.hill.climbing.Root.Count, Greedy.hill.climbing.Total.Degree.Maximum, Greedy.hill.climbing.Total.Degree.Mean, Greedy.hill.climbing.Total.Degree.Standard.Deviation, <br>Anytime.window.A..Error.bound, Anytime.window.A..In.degree.Maximum, Anytime.window.A..In.degree.Mean, Anytime.window.A..In.degree.Standard.Deviation, Anytime.window.A..Leaf.Count, <br>Anytime.window.A..Out.degree.Maximum, Anytime.window.A..Out.degree.Mean, Anytime.window.A..Out.degree.Standard.Deviation, Anytime.window.A..Root.Count, Anytime.window.A..Total.Degree.Maximum, <br>Anytime.window.A..Total.Degree.Mean, Anytime.window.A..Total.Degree.Standard.Deviation, GOBNILP.Error.bound, GOBNILP.In.degree.Maximum, GOBNILP.In.degree.Mean, <br>GOBNILP.In.degree.Standard.Deviation, GOBNILP.Leaf.Count, GOBNILP.Out.degree.Maximum, GOBNILP.Out.degree.Mean, GOBNILP.Out.degree.Standard.Deviation, <br>GOBNILP.Root.Count, GOBNILP.Total.Degree.Maximum, GOBNILP.Total.Degree.Mean, GOBNILP.Total.Degree.Standard.Deviation, CPBayes.Error.bound, <br>CPBayes.In.degree.Maximum, CPBayes.In.degree.Mean, CPBayes.In.degree.Standard.Deviation, CPBayes.Leaf.Count, CPBayes.Out.degree.Maximum, <br>CPBayes.Out.degree.Mean, CPBayes.Out.degree.Standard.Deviation, CPBayes.Root.Count, CPBayes.Total.Degree.Maximum, CPBayes.Total.Degree.Mean, <br>CPBayes.Total.Degree.Standard.Deviation
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from   to , resulting in a PAR10 score of  for the reduced model. Analogously, the model that was generated based on  of the originally  features resulted in a PAR10 score of .
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">8</code> to <code class="knitr inline">5</code>, resulting in a PAR10 score of <code class="knitr inline">1180.894</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">5</code> of the originally <code class="knitr inline">86</code> features resulted in a PAR10 score of <code class="knitr inline">1085.356</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br><br><br>Selected Solvers:<br>
+Selected Features:<br>Variable.Count, Pattern.database.lower.bound.Total.Degree.Maximum, Greedy.hill.climbing.In.degree.Standard.Deviation, GOBNILP.Out.degree.Mean, GOBNILP.Root.Count<br><br><br>Selected Solvers:<br>astar.ec, astar.comp, cpbayes, ilp.141, ilp.162<br>
 <p>
 
 

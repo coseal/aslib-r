@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-.knitr .inline {
+.inline {
   background-color: #f7f7f7;
   border:solid 1px #B0B0B0;
 }
@@ -23,13 +23,13 @@
 .source {
   background-color: #f5f5f5;
 }
-.rimage .left {
+.left {
   text-align: left;
 }
-.rimage .right {
+.right {
   text-align: right;
 }
-.rimage .center {
+.center {
   text-align: center;
 }
 .hl.num {
@@ -96,20 +96,21 @@ solver always has a misclassification penalty of zero.</li>
 
 <p>
 
-<!-- html table generated in R 3.5.2 by xtable 1.8-2 package -->
-<!-- Mon Dec 24 13:53:06 2018 -->
+<!-- html table generated in R 4.0.3 by xtable 1.8-4 package -->
+<!-- Wed May 19 15:24:27 2021 -->
 <table border=1>
 <tr> <th> algo </th> <th> model </th> <th> succ </th> <th> par10 </th> <th> mcp </th>  </tr>
   <tr> <td> baseline </td> <td> vbs </td> <td>  0.937 </td> <td> 400.179 </td> <td>  0.000 </td> </tr>
   <tr> <td> baseline </td> <td> singleBest </td> <td> <b><FONT COLOR="#00FF00"> 0.859</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">880.547</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">58.884</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestByPar </td> <td> <b><FONT COLOR="#00FF00"> 0.859</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">880.547</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">58.884</FONT></b> </td> </tr>
   <tr> <td> baseline </td> <td> singleBestBySuccesses </td> <td> <b><FONT COLOR="#00FF00"> 0.859</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">880.547</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">58.884</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> rpart </td> <td>  0.895 </td> <td> 654.968 </td> <td> 28.429 </td> </tr>
-  <tr> <td> classif </td> <td> randomForest </td> <td> <b><FONT COLOR="#00FF00"> 0.896</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">644.686</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">26.455</FONT></b> </td> </tr>
-  <tr> <td> classif </td> <td> ksvm </td> <td>  0.879 </td> <td> 752.553 </td> <td> 38.357 </td> </tr>
+  <tr> <td> classif </td> <td> rpart </td> <td> <b><FONT COLOR="#00FF00"> 0.895</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">654.968</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">28.429</FONT></b> </td> </tr>
+  <tr> <td> classif </td> <td> randomForest </td> <td>  0.892 </td> <td> 672.120 </td> <td> 28.876 </td> </tr>
+  <tr> <td> classif </td> <td> ksvm </td> <td>  0.883 </td> <td> 724.782 </td> <td> 35.594 </td> </tr>
+  <tr> <td> cluster </td> <td> XMeans </td> <td> <b><FONT COLOR="#00FF00"> 0.890</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">688.782</FONT></b> </td> <td> <b><FONT COLOR="#00FF00">37.140</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> lm </td> <td> <b><FONT COLOR="#FFAAAA"> 0.902</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">615.052</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">26.043</FONT></b> </td> </tr>
   <tr> <td> regr </td> <td> rpart </td> <td> <b><FONT COLOR="#FFAAAA"> 0.901</FONT></b> </td> <td> <b><FONT COLOR="#FFAAAA">625.056</FONT></b> </td> <td> 31.855 </td> </tr>
-  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.920</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">504.752</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">15.857</FONT></b> </td> </tr>
+  <tr> <td> regr </td> <td> randomForest </td> <td> <b><FONT COLOR="#FF0000"> 0.919</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">512.830</FONT></b> </td> <td> <b><FONT COLOR="#FF0000">15.588</FONT></b> </td> </tr>
    </table>
 
 
@@ -120,23 +121,25 @@ The following default feature steps were used for model building:
 <p>
 <code class="knitr inline">Static, Dynamic.1, Dynamic.2, Dynamic.3, Dynamic.4</code>
 <p>
-Number of presolved instances: <code class="knitr inline">204</code>
+Number of presolved instances: <code class="knitr inline">0</code>
 <p>
-The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">1608.16</code>
-or on average: <code class="knitr inline">1.2427821</code>
+The cost for using the feature steps (adapted for presolving) is: <code class="knitr inline">0</code>
+or on average: <code class="knitr inline">0</code>
 <p>
-The feature steps correspond to the following <code class="knitr inline">138</code> / <code class="knitr inline">138</code> features:
+The feature steps correspond to the following <code class="knitr inline">138</code> / <code class="knitr inline">138</code> instance features:
 <p>
 Frac_Neg_Body, Frac_Pos_Body, Frac_Unary_Rules, Frac_Binary_Rules, Frac_Ternary_Rules, <br>Frac_Integrity_Rules, Tight, Problem_Variables, Free_Problem_Variables, Assigned_Problem_Variables, <br>Constraints, Constraints.Vars, Created_Bodies, Program_Atoms, SCCS, <br>Nodes_in_Positive_BADG, Rules, Normal_Rules, Cardinality_Rules, Choice_Rules, <br>Weight_Rules, Frac_Normal_Rules, Frac_Cardinality_Rules, Frac_Choice_Rules, Frac_Weight_Rules, <br>Equivalences, Atom.Atom_Equivalences, Body.Body_Equivalences, Other_Equivalences, Frac_Atom.Atom_Equivalences, <br>Frac_Body.Body_Equivalences, Frac_Other_Equivalences, Binary_Constraints, Ternary_Constraints, Other_Constraints, <br>Frac_Binary_Constraints, Frac_Ternary_Constraints, Frac_Other_Constraints, Choices.1, Conflicts.Choices.1, <br>Avg_Conflict_Levels.1, Avg_LBD_Levels.1, Learnt_from_Conflict.1, Learnt_from_Loop.1, Frac_Learnt_from_Conflict.1, <br>Frac_Learnt_from_Loop.1, Literals_in_Conflict_Nogoods.1, Literals_in_Loop_Nogoods.1, Frac_Literals_in_Conflict_Nogoods.1, Frac_Literals_in_Loop_Nogoods.1, <br>Removed_Nogoods.1, Learnt_Binary.1, Learnt_Ternary.1, Learnt_Others.1, Frac_Removed_Nogood.1, <br>Frac_Learnt_Binary.1, Frac_Learnt_Ternary.1, Frac_Learnt_Others.1, Skipped_Levels_while_Backjumping.1, Avg_Skipped_Levels_while_Backjumping.1, <br>Longest_Backjumping.1, Running_Avg_Conflictlevel.1, Running_Avg_LBD.1, Choices.2, Conflicts.Choices.2, <br>Avg_Conflict_Levels.2, Avg_LBD_Levels.2, Learnt_from_Conflict.2, Learnt_from_Loop.2, Frac_Learnt_from_Conflict.2, <br>Frac_Learnt_from_Loop.2, Literals_in_Conflict_Nogoods.2, Literals_in_Loop_Nogoods.2, Frac_Literals_in_Conflict_Nogoods.2, Frac_Literals_in_Loop_Nogoods.2, <br>Removed_Nogoods.2, Learnt_Binary.2, Learnt_Ternary.2, Learnt_Others.2, Frac_Removed_Nogood.2, <br>Frac_Learnt_Binary.2, Frac_Learnt_Ternary.2, Frac_Learnt_Others.2, Skipped_Levels_while_Backjumping.2, Avg_Skipped_Levels_while_Backjumping.2, <br>Longest_Backjumping.2, Running_Avg_Conflictlevel.2, Running_Avg_LBD.2, Choices.3, Conflicts.Choices.3, <br>Avg_Conflict_Levels.3, Avg_LBD_Levels.3, Learnt_from_Conflict.3, Learnt_from_Loop.3, Frac_Learnt_from_Conflict.3, <br>Frac_Learnt_from_Loop.3, Literals_in_Conflict_Nogoods.3, Literals_in_Loop_Nogoods.3, Frac_Literals_in_Conflict_Nogoods.3, Frac_Literals_in_Loop_Nogoods.3, <br>Removed_Nogoods.3, Learnt_Binary.3, Learnt_Ternary.3, Learnt_Others.3, Frac_Removed_Nogood.3, <br>Frac_Learnt_Binary.3, Frac_Learnt_Ternary.3, Frac_Learnt_Others.3, Skipped_Levels_while_Backjumping.3, Avg_Skipped_Levels_while_Backjumping.3, <br>Longest_Backjumping.3, Running_Avg_Conflictlevel.3, Running_Avg_LBD.3, Choices.4, Conflicts.Choices.4, <br>Avg_Conflict_Levels.4, Avg_LBD_Levels.4, Learnt_from_Conflict.4, Learnt_from_Loop.4, Frac_Learnt_from_Conflict.4, <br>Frac_Learnt_from_Loop.4, Literals_in_Conflict_Nogoods.4, Literals_in_Loop_Nogoods.4, Frac_Literals_in_Conflict_Nogoods.4, Frac_Literals_in_Loop_Nogoods.4, <br>Removed_Nogoods.4, Learnt_Binary.4, Learnt_Ternary.4, Learnt_Others.4, Frac_Removed_Nogood.4, <br>Frac_Learnt_Binary.4, Frac_Learnt_Ternary.4, Frac_Learnt_Others.4, Skipped_Levels_while_Backjumping.4, Avg_Skipped_Levels_while_Backjumping.4, <br>Longest_Backjumping.4, Running_Avg_Conflictlevel.4, Running_Avg_LBD.4
 <p>
 
+
+
 <h3> Algorithm and Feature Subset Selection </h3>
 
-In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">11</code> to <code class="knitr inline">5</code>, resulting in a PAR10 score of <code class="knitr inline">509.610</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">4</code> of the originally <code class="knitr inline">134</code> features resulted in a PAR10 score of <code class="knitr inline">472.843</code>.
+In order to get a better insight of the scenarios, forward selections have been applied to the solvers and features to determine whether small subsets achieve comparable performances. Following this approach, we reduced the number of solvers from  <code class="knitr inline">11</code> to <code class="knitr inline">8</code>, resulting in a PAR10 score of <code class="knitr inline">493.017</code> for the reduced model. Analogously, the model that was generated based on <code class="knitr inline">3</code> of the originally <code class="knitr inline">134</code> features resulted in a PAR10 score of <code class="knitr inline">478.545</code>.
 Below, you can find the list of the selected features and solvers:
 
 <p>
-Selected Features:<br>Constraints.Vars, Frac_Ternary_Constraints, Learnt_Binary.1, Learnt_Others.1<br><br>Selected Solvers:<br>clasp.2.1.3.h3.n1, clasp.2.1.3.h5.n1, clasp.2.1.3.h6.n1, clasp.2.1.3.h1.n1, clasp.2.1.3.h8.n1<br>
+Selected Features:<br>Constraints.Vars, Frac_Choice_Rules, Learnt_from_Loop.1<br><br>Selected Solvers:<br>clasp.2.1.3.h1.n1, clasp.2.1.3.h11.n1, clasp.2.1.3.h2.n1, clasp.2.1.3.h3.n1, clasp.2.1.3.h4.n1, <br>clasp.2.1.3.h6.n1, clasp.2.1.3.h8.n1, clasp.2.1.3.h9.n1
 <p>
 
 
