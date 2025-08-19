@@ -5,9 +5,22 @@ Description: Provides an interface to the algorithm selection benchmark library
     (<https://cran.r-project.org/package=llama>) for building
     algorithm selection models; see Bischl et al. (2016)
     <doi:10.1016/j.artint.2016.04.003>.
-Author: Bernd Bischl <bernd_bischl@gmx.net>, Lars Kotthoff <larsko@uwyo.edu>,
-    Pascal Kerschke <kerschke@uni-muenster.de> [ctb], 
-    Damir Pulatov <damirpolat@protonmail.com> [ctb]
+Authors@R: c(person(given = "Bernd",
+                        family = "Bischl",
+                        role = "aut",
+                        email = "bernd_bischl@gmx.net"),
+                 person(given = "Lars",
+                        family = "Kotthoff",
+                        role = c("aut", "cre"),
+                        email = "larsko@uwyo.edu"),
+                 person(given = "Pascal",
+                        family = "Kerschke",
+                        role = c("ctb", "aut"),
+                        email = "kerschke@uni-muenster.de"),
+                 person(given = "Damir",
+                        family = "Pulatov",
+                        role = c("ctb", "aut"),
+                        email = "damirpolat@protonmail.com"))
 Maintainer: Lars Kotthoff <larsko@uwyo.edu>
 URL: https://github.com/coseal/aslib-r/
 BugReports: https://github.com/coseal/aslib-r/issues
@@ -33,5 +46,5 @@ Suggests:
     rpart
 ByteCompile: yes
 Encoding: UTF-8
-Version: 0.1.2
-RoxygenNote: 7.2.1
+Version: 0.1.3
+RoxygenNote: 7.3.2

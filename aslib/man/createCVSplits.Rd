@@ -19,7 +19,7 @@ CV folds.
 Default is 10.}
 
 \item{file}{[\code{character}]\cr
-If not missing, where to save the returned splits as an ARFF file via \code{\link{write.arff}}.
+If not missing, where to save the returned splits as an ARFF file via \code{\link[RWeka]{write.arff}}.
 Default is no saving.}
 }
 \value{

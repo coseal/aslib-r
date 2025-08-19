@@ -1,3 +1,6 @@
+aslib_0.1.3:
+- Update for stricter \link{} checking.
+
 aslib_0.1.2:
 - Update for HTML5 documentation pages.
 

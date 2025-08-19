@@ -15,7 +15,7 @@ summarizeLlamaExps(
 )
 }
 \arguments{
-\item{reg}{[\code{\link{Registry}}]\cr
+\item{reg}{[\code{\link[batchtools]{Registry}}]\cr
 batchtools registry.}
 
 \item{ids}{[\code{data.table}]\cr
@@ -24,12 +24,12 @@ Selected job ids. Default is all submitted jobs.}
 \item{fun}{[\code{function()}]\cr
 Function to aggregate results with. Default is a function
 that returns succ, par10 and mcp values.
-For a detailed description, see [\link{reduceResultsList}].}
+For a detailed description, see [\link[batchtools]{reduceResultsList}].}
 
 \item{missing.val}{[\code{list(1)}]\cr
 List with defaults for missing values that are needed for
 aggregation.
-For a detailed description, see [\link{reduceResultsList}].}
+For a detailed description, see [\link[batchtools]{reduceResultsList}].}
 }
 \value{
 [\code{data.table}].
