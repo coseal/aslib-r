@@ -1,7 +1,7 @@
 Package: aslib
 Title: Interface to the Algorithm Selection Benchmark Library
 Description: Provides an interface to the algorithm selection benchmark library
-    at <http://www.aslib.net> and the 'LLAMA' package
+    at <https://www.coseal.net/aslib/> and the 'LLAMA' package
     (<https://cran.r-project.org/package=llama>) for building
     algorithm selection models; see Bischl et al. (2016)
     <doi:10.1016/j.artint.2016.04.003>.
